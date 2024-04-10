@@ -11,6 +11,9 @@ export default {
     extend: {
       container: {
         center: true
+      },
+      fontFamily: {
+        "IranYekan": "IranYekan"
       }
     },
   },

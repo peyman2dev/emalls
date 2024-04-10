@@ -1,0 +1,897 @@
+{
+  "menus": [
+    {
+      "title": "گوشی موبایل و تبلت",
+      "to": "phone-and-tablets",
+      "submenus": [
+        {
+          "title": "گوشی موبایل",
+          "to": "mobiles",
+          "submenus": [
+            {
+              "title": "گوشی‌های اپل",
+              "to": "apple-phones"
+            },
+            {
+              "title": "گوشی‌های سامسونگ",
+              "to": "samsung-phones"
+            },
+            {
+              "title": "گوشی‌های شیائومی",
+              "to": "xiaomi-phones"
+            }
+          ]
+        },
+        {
+          "title": "تبلت",
+          "to": "tablets",
+          "submenus": [
+            {
+              "title": "تبلت‌های آیپد",
+              "to": "ipad-tablets"
+            },
+            {
+              "title": "تبلت‌های سامسونگ",
+              "to": "samsung-tablets"
+            },
+            {
+              "title": "تبلت‌های هواوی",
+              "to": "huawei-tablets"
+            }
+          ]
+        },
+        {
+          "title": "کتابخوان",
+          "to": "e-readers",
+          "submenus": [
+            {
+              "title": "کتابخوان‌های آمازون",
+              "to": "amazon-e-readers"
+            },
+            {
+              "title": "کتابخوان‌های کوبو",
+              "to": "kobo-e-readers"
+            },
+            {
+              "title": "کتابخوان‌های بارنز و نوبل",
+              "to": "barnes-and-noble-e-readers"
+            },
+            {
+              "title": "کتابخوان‌های اسوس",
+              "to": "asus-e-readers"
+            },
+            {
+              "title": "کتابخوان‌های سونی",
+              "to": "sony-e-readers"
+            }
+          ]
+        },
+        {
+          "title": "هدست و هدفون",
+          "to": "headsets-and-headphones",
+          "submenus": [
+            {
+              "title": "هدفون‌های بلوتوثی",
+              "to": "bluetooth-headphones"
+            },
+            {
+              "title": "هدفون‌های باسیم",
+              "to": "wired-headphones"
+            },
+            {
+              "title": "هدفون‌های بی سیم",
+              "to": "wireless-headphones"
+            },
+            {
+              "title": "هدفون‌های آنالوگ",
+              "to": "analog-headphones"
+            },
+            {
+              "title": "هدفون‌های دیجیتال",
+              "to": "digital-headphones"
+            }
+          ]
+        },
+        {
+          "title": "GPS",
+          "to": "gps-devices",
+          "submenus": [
+            {
+              "title": "GPS خودرو",
+              "to": "car-gps"
+            },
+            {
+              "title": "GPS مسافرتی",
+              "to": "portable-gps"
+            },
+            {
+              "title": "GPS موتورسیکلت",
+              "to": "motorcycle-gps"
+            },
+            {
+              "title": "GPS ماهواره‌ای",
+              "to": "satellite-gps"
+            },
+            {
+              "title": "GPS ماهواره‌ای خریداری شده",
+              "to": "purchased-satellite-gps"
+            }
+          ]
+        },
+        {
+          "title": "لوازم جانبی موبایل و تبلت",
+          "to": "mobile-and-tablet-accessories",
+          "submenus": [
+            {
+              "title": "کیف و کاور موبایل",
+              "to": "phone-cases-and-covers"
+            },
+            {
+              "title": "پاوربانک",
+              "to": "power-banks"
+            },
+            {
+              "title": "شارژر همراه",
+              "to": "portable-chargers"
+            },
+            {
+              "title": "کابل شارژ و داده",
+              "to": "charging-and-data-cables"
+            },
+            {
+              "title": "هولدر و استند موبایل",
+              "to": "phone-holders-and-stands"
+            }
+          ]
+        },
+        {
+          "title": "ساعت هوشمند",
+          "to": "smartwatches",
+          "submenus": [
+            {
+              "title": "ساعت هوشمند اپل",
+              "to": "apple-smartwatches"
+            },
+            {
+              "title": "ساعت هوشمند سامسونگ",
+              "to": "samsung-smartwatches"
+            },
+            {
+              "title": "ساعت هوشمند فیت‌بیت",
+              "to": "fitbit-smartwatches"
+            },
+            {
+              "title": "ساعت هوشمند هواوی",
+              "to": "huawei-smartwatches"
+            },
+            {
+              "title": "ساعت هوشمند آمازون",
+              "to": "amazon-smartwatches"
+            }
+          ]
+        },
+        {
+          "title": "لوازم جانبی ساعت هوشمند",
+          "to": "smartwatch-accessories",
+          "submenus": [
+            {
+              "title": "بند و قاب ساعت هوشمند",
+              "to": "watch-bands-and-cases"
+            },
+            {
+              "title": "شارژر ساعت هوشمند",
+              "to": "smartwatch-chargers"
+            },
+            {
+              "title": "پله شمار ساعت هوشمند",
+              "to": "smartwatch-pedometers"
+            },
+            {
+              "title": "بلوتوث ساعت هوشمند",
+              "to": "smartwatch-bluetooth-adapters"
+            },
+            {
+              "title": "کیف حمل ساعت هوشمند",
+              "to": "smartwatch-carrying-cases"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "لپتاپ و کامپیوتر",
+      "to": "laptops-and-computers",
+      "submenus": [
+        {
+          "title": "کیف پول سخت افزار",
+          "to": "hardware-wallets",
+          "submenus": [
+            {
+              "title": "کیف پول سخت افزار بیت‌کوین",
+              "to": "bitcoin-hardware-wallets"
+            },
+            {
+              "title": "کیف پول سخت افزار اتریوم",
+              "to": "ethereum-hardware-wallets"
+            },
+            {
+              "title": "کیف پول سخت افزار دیگر ارزها",
+              "to": "other-crypto-hardware-wallets"
+            }
+          ]
+        },
+        {
+          "title": "لپتاپ",
+          "to": "laptops",
+          "submenus": [
+            {
+              "title": "لپتاپ‌های ایسوس",
+              "to": "asus-laptops"
+            },
+            {
+              "title": "لپتاپ‌های دل",
+              "to": "dell-laptops"
+            },
+            {
+              "title": "لپتاپ‌های اپل",
+              "to": "apple-laptops"
+            },
+            {
+              "title": "لپتاپ‌های اچ‌پی",
+              "to": "hp-laptops"
+            },
+            {
+              "title": "لپتاپ‌های لنوو",
+              "to": "lenovo-laptops"
+            }
+          ]
+        },
+        {
+          "title": "کامپیوتر",
+          "to": "computers",
+          "submenus": [
+            {
+              "title": "کامپیوترهای رومیزی",
+              "to": "desktop-computers"
+            },
+            {
+              "title": "کامپیوترهای All-in-One",
+              "to": "all-in-one-computers"
+            },
+            {
+              "title": "کامپیوترهای اسمبل شده",
+              "to": "assembled-computers"
+            },
+            {
+              "title": "کامپیوترهای مینی",
+              "to": "mini-computers"
+            }
+          ]
+        },
+        {
+          "title": "تجهیزات شبکه",
+          "to": "network-equipment",
+          "submenus": [
+            {
+              "title": "راوترها",
+              "to": "routers"
+            },
+            {
+              "title": "سوئیچ‌ها",
+              "to": "switches"
+            },
+            {
+              "title": "مودم‌ها",
+              "to": "modems"
+            },
+            {
+              "title": "آنتن‌ها",
+              "to": "antennas"
+            }
+          ]
+        },
+        {
+          "title": "تجهیزات اداری",
+          "to": "office-equipment",
+          "submenus": [
+            {
+              "title": "پرینترها",
+              "to": "printers"
+            },
+            {
+              "title": "فکس‌ها",
+              "to": "fax-machines"
+            },
+            {
+              "title": "اسکنرها",
+              "to": "scanners"
+            },
+            {
+              "title": "ماشین‌های اداری",
+              "to": "office-machines"
+            }
+          ]
+        },
+        {
+          "title": "تجهیزات ذخیره‌سازی",
+          "to": "storage-equipment",
+          "submenus": [
+            {
+              "title": "هارد دیسک‌ها",
+              "to": "hard-drives"
+            },
+            {
+              "title": "فلش‌مموری‌ها",
+              "to": "flash-drives"
+            },
+            {
+              "title": "کارت‌های حافظه",
+              "to": "memory-cards"
+            },
+            {
+              "title": "دیسک‌های اپتیکال",
+              "to": "optical-discs"
+            }
+          ]
+        },
+        {
+          "title": "لوازم جانبی لپتاپ و کامپیوتر",
+          "to": "laptop-and-computer-accessories",
+          "submenus": [
+            {
+              "title": "ماوس‌ها",
+              "to": "mice"
+            },
+            {
+              "title": "صفحه‌کلیدها",
+              "to": "keyboards"
+            },
+            {
+              "title": "کیف و کاور لپتاپ",
+              "to": "laptop-cases-and-covers"
+            },
+            {
+              "title": "میزهای موسی",
+              "to": "mouse-pads"
+            },
+            {
+              "title": "کابل‌های صدا و تصویر",
+              "to": "audio-and-video-cables"
+            }
+          ]
+        },
+        {
+          "title": "دستگاه ماینینگ",
+          "to": "mining-devices",
+          "submenus": [
+            {
+              "title": "دستگاه‌های ماینر بیت‌کوین",
+              "to": "bitcoin-miners"
+            },
+            {
+              "title": "دستگاه‌های ماینر اتریوم",
+              "to": "ethereum-miners"
+            },
+            {
+              "title": "دستگاه‌های ماینر دیگر ارزها",
+              "to": "other-crypto-miners"
+            }
+          ]
+        }
+      ]
+    },
+        
+      {
+        "title": "لوازم خانگی",
+        "to": "home-appliances",
+        "submenus": [
+          {
+            "title": "تهویه سرمایش و گرمایش",
+            "to": "cooling-and-heating",
+            "submenus": [
+              {
+                "title": "کولرها",
+                "to": "air-coolers"
+              },
+              {
+                "title": "پنکه‌های سقفی",
+                "to": "ceiling-fans"
+              },
+              {
+                "title": "پکیج‌های گرمایشی",
+                "to": "heating-packages"
+              },
+              {
+                "title": "کولرگازی",
+                "to": "gas-heaters"
+              },
+              {
+                "title": "شوفاژها",
+                "to": "radiators"
+              }
+            ]
+          },
+          {
+            "title": "شستشو و نظافت",
+            "to": "cleaning-and-hygiene",
+            "submenus": [
+              {
+                "title": "ماشین لباسشویی",
+                "to": "washing-machines"
+              },
+              {
+                "title": "ظرفشویی",
+                "to": "dishwashers"
+              },
+              {
+                "title": "جاروبرقی",
+                "to": "vacuum-cleaners"
+              },
+              {
+                "title": "روبات‌های خانگی",
+                "to": "home-robots"
+              },
+              {
+                "title": "پد‌ها و لوازم تمیزکاری",
+                "to": "cleaning-pads-and-accessories"
+              }
+            ]
+          },
+          {
+            "title": "لوازم آشپزخانه برقی",
+            "to": "electric-kitchen-appliances",
+            "submenus": [
+              {
+                "title": "ماکروویو",
+                "to": "microwaves"
+              },
+              {
+                "title": "ماشین چایساز و قهوه‌ساز",
+                "to": "kettles-and-coffee-makers"
+              },
+              {
+                "title": "توستر",
+                "to": "toasters"
+              },
+              {
+                "title": "آبمیوه‌گیر",
+                "to": "juicers"
+              },
+              {
+                "title": "مخلوط‌کن و آسیاب",
+                "to": "blenders-and-grinders"
+              }
+            ]
+          },
+          {
+            "title": "سایر لوازم خانگی",
+            "to": "other-home-appliances",
+            "submenus": [
+              {
+                "title": "اسکوتر برقی",
+                "to": "electric-scooters"
+              },
+              {
+                "title": "پروژکتورها",
+                "to": "projectors"
+              },
+              {
+                "title": "پخش کننده‌های دی‌وی‌دی",
+                "to": "dvd-players"
+              },
+              {
+                "title": "صندلی‌های گرمایشی",
+                "to": "heated-seats"
+              },
+              {
+                "title": "مایحتاج‌های برقی",
+                "to": "electric-gadgets"
+              }
+            ]
+          },
+          {
+            "title": "آشپزخانه",
+            "to": "kitchen",
+            "submenus": [
+              {
+                "title": "ظروف آشپزخانه",
+                "to": "cookware"
+              },
+              {
+                "title": "دستگیره‌ها و دستگاه‌های آشپزخانه",
+                "to": "kitchen-handles-and-appliances"
+              },
+              {
+                "title": "لوازم سرو و پذیرایی",
+                "to": "serving-and-dining"
+              },
+              {
+                "title": "ابزار آشپزی",
+                "to": "cooking-tools"
+              },
+              {
+                "title": "کنترل کننده‌های حرارت",
+                "to": "temperature-controllers"
+              }
+            ]
+          },
+          {
+            "title": "خواب و حمام",
+            "to": "bed-and-bath",
+            "submenus": [
+              {
+                "title": "تشک‌ها و رومیزی‌ها",
+                "to": "mattresses-and-toppers"
+              },
+              {
+                "title": "ملحفه‌ها و کوسن‌ها",
+                "to": "duvets-and-cushions"
+              },
+              {
+                "title": "حوله‌ها و پتوها",
+                "to": "towels-and-blankets"
+              },
+              {
+                "title": "لوازم حمام",
+                "to": "bathroom-accessories"
+              },
+              {
+                "title": "لوازم شخصی",
+                "to": "personal-care-products"
+              }
+            ]
+          },
+          {
+            "title": "سیستم‌های امنیتی",
+            "to": "security-systems",
+            "submenus": [
+              {
+                "title": "دوربین‌های مداربسته",
+                "to": "cctv-cameras"
+              },
+              {
+                "title": "سیستم‌های اعلان حریق",
+                "to": "fire-alarm-systems"
+              },
+              {
+                "title": "قفل‌ها و قفل‌های هوشمند",
+                "to": "locks-and-smart-locks"
+              },
+              {
+                "title": "دتکتورهای حرکتی",
+                "to": "motion-detectors"
+              },
+              {
+                "title": "سیستم‌های اعلان دزدی",
+                "to": "burglar-alarm-systems"
+              }
+            ]
+          },
+          {
+            "title": "تجهیزات خانه هوشمند",
+            "to": "smart-home-equipment",
+            "submenus": [
+              {
+                "title": "کنترل‌کننده‌های هوشمند",
+                "to": "smart-controllers"
+              },
+              {
+                "title": "پریزها و سوکت‌های هوشمند",
+                "to": "smart-plugs-and-sockets"
+              },
+              {
+                "title": "پنل‌های کنترل هوشمند",
+                "to": "smart-control-panels"
+              },
+              {
+                "title": "سنسورهای هوشمند",
+                "to": "smart-sensors"
+              },
+              {
+                "title": "کلیدهای هوشمند",
+                "to": "smart-keys"
+              }
+            ]
+          },
+          {
+            "title": "لوازم جانبی لوازم خانگی",
+            "to": "home-appliance-accessories",
+            "submenus": [
+              {
+                "title": "فیلترها و قطعات یدکی",
+                "to": "filters-and-spare-parts"
+              },
+              {
+                "title": "باتری‌ها و شارژرها",
+                "to": "batteries-and-chargers"
+              },
+              {
+                "title": "کابل‌ها و اتصالات",
+                "to": "cables-and-connectors"
+              },
+              {
+                "title": "تجهیزات نگهداری و تعمیر",
+                "to": "maintenance-and-repair-equipment"
+              },
+              {
+                "title": "کیف و کاور",
+                "to": "bags-and-covers"
+              }
+            ]
+          },
+          {
+            "title": "تصویری و صوتی",
+            "to": "audio-and-video",
+            "submenus": [
+              {
+                "title": "تلویزیون‌ها",
+                "to": "televisions"
+              },
+              {
+                "title": "سیستم‌های صوتی",
+                "to": "audio-systems"
+              },
+              {
+                "title": "بلندگوها",
+                "to": "speakers"
+              },
+              {
+                "title": "هدفون‌ها",
+                "to": "headphones"
+              },
+              {
+                "title": "کنسول‌های بازی",
+                "to": "gaming-consoles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "پزشکی و سلامت",
+        "to": "health-and-wellness",
+        "submenus": [
+          {
+            "title": "تجهیزات پزشکی",
+            "to": "medical-equipment",
+            "submenus": [
+              {
+                "title": "پرسنل پزشکی",
+                "to": "medical-personnel"
+              },
+              {
+                "title": "ابزار جراحی",
+                "to": "surgical-instruments"
+              },
+              {
+                "title": "دستگاه‌های پزشکی",
+                "to": "medical-devices"
+              },
+              {
+                "title": "تجهیزات تشخیصی",
+                "to": "diagnostic-equipment"
+              },
+              {
+                "title": "تجهیزات دندانپزشکی",
+                "to": "dental-equipment"
+              }
+            ]
+          },
+          {
+            "title": "گجت های تندرستی",
+            "to": "health-gadgets",
+            "submenus": [
+              {
+                "title": "سنسورهای تندرستی",
+                "to": "health-sensors"
+              },
+              {
+                "title": "ساعت‌های هوشمند سلامتی",
+                "to": "smart-health-watches"
+              },
+              {
+                "title": "تراکم‌سنج‌ها",
+                "to": "density-meters"
+              },
+              {
+                "title": "پایش کننده‌های خواب",
+                "to": "sleep-trackers"
+              },
+              {
+                "title": "ترازوهای هوشمند",
+                "to": "smart-scales"
+              }
+            ]
+          },
+          {
+            "title": "محصولات طبی",
+            "to": "medical-products",
+            "submenus": [
+              {
+                "title": "ضماد و باندها",
+                "to": "bandages-and-dressings"
+              },
+              {
+                "title": "محصولات ترمیمی",
+                "to": "healing-products"
+              },
+              {
+                "title": "محصولات ضدعفونی کننده",
+                "to": "disinfectants"
+              },
+              {
+                "title": "محصولات ضد درد",
+                "to": "pain-relief-products"
+              },
+              {
+                "title": "محصولات تسکین دهنده",
+                "to": "soothing-products"
+              }
+            ]
+          },
+          {
+            "title": "دارو و مکمل ها",
+            "to": "drugs-and-supplements",
+            "submenus": [
+              {
+                "title": "داروهای تسکین دهنده",
+                "to": "pain-relief-drugs"
+              },
+              {
+                "title": "مکمل‌های ویتامینی",
+                "to": "vitamin-supplements"
+              },
+              {
+                "title": "داروهای ضدافسردگی",
+                "to": "cold-remedies"
+              },
+              {
+                "title": "داروهای ضد التهاب",
+                "to": "anti-inflammatory-drugs"
+              },
+              {
+                "title": "داروهای ضد اشتها",
+                "to": "appetite-suppressants"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ورزش و سرگرمی",
+        "to": "sports-and-entertainment",
+        "submenus": [
+          {
+            "title": "وسایل ورزشی",
+            "to": "sports-equipment",
+            "submenus": [
+              {
+                "title": "تردمیل",
+                "to": "treadmills"
+              },
+              {
+                "title": "دوچرخه‌های ورزشی",
+                "to": "exercise-bikes"
+              },
+              {
+                "title": "توپ‌های ورزشی",
+                "to": "sports-balls"
+              },
+              {
+                "title": "تجهیزات فیتنس",
+                "to": "fitness-equipment"
+              },
+              {
+                "title": "راکت و تنیس",
+                "to": "rackets-and-tennis"
+              }
+            ]
+          },
+          {
+            "title": "اسباب بازی",
+            "to": "toys",
+            "submenus": [
+              {
+                "title": "عروسک‌ها",
+                "to": "dolls"
+              },
+              {
+                "title": "قایق‌های کنترلی",
+                "to": "remote-controlled-boats"
+              },
+              {
+                "title": "بازی‌های تعاملی",
+                "to": "interactive-games"
+              },
+              {
+                "title": "پازل‌ها",
+                "to": "puzzles"
+              },
+              {
+                "title": "توپ‌های بازی",
+                "to": "play-balls"
+              }
+            ]
+          },
+          {
+            "title": "تجهیزات سفر",
+            "to": "travel-gear",
+            "submenus": [
+              {
+                "title": "چمدان و کوله‌ها",
+                "to": "suitcases-and-backpacks"
+              },
+              {
+                "title": "گرم‌کننده‌های دستی",
+                "to": "hand-warmers"
+              },
+              {
+                "title": "پرچم و استانداردها",
+                "to": "flags-and-standards"
+              },
+              {
+                "title": "کیف‌های مسافرتی",
+                "to": "travel-bags"
+              },
+              {
+                "title": "تجهیزات کمپینگ",
+                "to": "camping-equipment"
+              }
+            ]
+          },
+          {
+            "title": "کواد کوپتر",
+            "to": "quadcopters",
+            "submenus": [
+              {
+                "title": "دوربین‌دار",
+                "to": "camera-equipped"
+              },
+              {
+                "title": "بدون دوربین",
+                "to": "cameraless"
+              },
+              {
+                "title": "حرفه‌ای",
+                "to": "professional"
+              },
+              {
+                "title": "تفریحی",
+                "to": "recreational"
+              },
+              {
+                "title": "مسابقه‌ای",
+                "to": "racing"
+              }
+            ]
+          },
+          {
+            "title": "سرگرمی",
+            "to": "entertainment",
+            "submenus": [
+              {
+                "title": "بازی‌های مجازی",
+                "to": "virtual-games"
+              },
+              {
+                "title": "کتابخانه صوتی",
+                "to": "audiobook-library"
+              },
+              {
+                "title": "فیلم‌های آنلاین",
+                "to": "online-movies"
+              },
+              {
+                "title": "کنسرت‌ها و اجراها",
+                "to": "concerts-and-performances"
+              },
+              {
+                "title": "بازی‌های جمعی",
+                "to": "group-games"
+              }
+            ]
+          }
+        ]
+      }
+  ]
+}
