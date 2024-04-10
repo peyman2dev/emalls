@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+    font-family: "IranYekan";
+    src: url(../fonts/iranyekan/IRANYekan.woff);
+}
+
+
+body {
+    @apply font-IranYekan
+}
