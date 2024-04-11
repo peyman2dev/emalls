@@ -34,7 +34,7 @@ export default function Windows() {
   };
 
   return (
-    <nav className="lg:visible between py-6 lg:block hidden invisible px-[108px]">
+    <nav className="xl:visible  py-6 xl:flex xl:justify-between xl:items-center hidden invisible px-[108px]">
       <div className="ic gap-10">
         <div>
           <Link>
@@ -42,7 +42,7 @@ export default function Windows() {
           </Link>
         </div>
 
-        <ul className="ic gap-10">
+        <ul className="ic xl:gap-10 lg:gap-4  lg:text-sm xl:text-base">
           {/* Categories Button */}
           <li className="ic gap-3 relative">
             {/* Categories Button */}
@@ -61,9 +61,9 @@ export default function Windows() {
               onClick={() => setShow(!show)}
               className={`w-screen top-[10%] ${
                 show ? "" : "opacity-0 invisible"
-              } duration-150 flex justify-center  pt-3  right-0 h-screen bg-black/30 fixed`}
+              } duration-150 flex justify-center  pt-3  right-0 h-screen bg-black/30 z-20 fixed`}
             >
-              <div className="absolute w-[80%] p-6 gap-10 bg-white rounded-lg shadow-2xl flex">
+              <div className="absolute w-[80%] p-6 gap-10 bg-white rounded-xl shadow-2xl flex">
                 <div className="h-full border-l w-[20%]">
                   {menus && menus.length
                     ? _.map(menus, (menu, index) => (

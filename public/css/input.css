@@ -35,3 +35,15 @@ body {
 .col-center {
     @apply flex items-center justify-center flex-col 
 }
+
+.child-center {
+    @apply chlild:flex chlild:items-center chlild:justify-center
+}
+
+.child-ic {
+    @apply chlild:flex chlild:items-center 
+}
+
+.child-between {
+    @apply chlild:flex chlild:items-center chlild:justify-between
+}

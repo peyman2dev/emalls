@@ -14,6 +14,10 @@ export default {
       },
       fontFamily: {
         "IranYekan": "IranYekan"
+      },
+      colors: {
+        main: "#2a2d53",
+        secondary: "#ff5f55"
       }
     },
   },
