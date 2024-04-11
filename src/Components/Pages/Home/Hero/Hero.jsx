@@ -8,7 +8,7 @@ export default function Hero() {
       <section className="container between lg:flex-row flex-col gap-4  h-full">
         <div className="relative z-10 lg:w-2/3 w-full flex-center flex-col gap-4 text-white">
           {/* Hero Text */}
-          <div className="md:text-[40px] text-[21px] font-bold chlild:flex flex flex-col">
+          <div className="md:text-[40px] text-[21px] font-bold child:flex flex flex-col">
             <p>
               با ایمالز
               <span className="inline-block flex-center  px-1 relative">

@@ -174,7 +174,7 @@ export default function Windows() {
           </li>
         </ul>
       </div>
-      <div className="ic gap-4 text-sm chlild:duration-300 chlild:rounded-lg">
+      <div className="ic gap-4 text-sm child:duration-300 child:rounded-lg">
         <div className="h-10  overflow-hidden border hover:bg-slate-100">
           <Link className="ic gap-2 h-full px-2">
             <span>
@@ -185,7 +185,7 @@ export default function Windows() {
             </span>
           </Link>
         </div>
-        <div className="bg-[#ff5f55] text-white    h-10 chlild:h-full drop-shadow-2xl shadow-secondary ">
+        <div className="bg-[#ff5f55] text-white    h-10 child:h-full drop-shadow-2xl shadow-secondary ">
                       <Link className="flex items-center gap-2 px-3">
                         <span>
                           <Shop size={18}/>

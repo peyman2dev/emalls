@@ -893,5 +893,410 @@
           }
         ]
       }
-  ]
+  ],
+    "products": [
+      {
+        "id": 1,
+        "name": "کفش ورزشی",
+        "category": "کفش ها",
+        "products": [
+          {
+            "title": "کفش ورزشی Nike",
+            "id": 101,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 150
+          },
+          {
+            "title": "کفش ورزشی Adidas",
+            "id": 102,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 120
+          },
+          {
+            "title": "کفش ورزشی Puma",
+            "id": 103,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 100
+          },
+          {
+            "title": "کفش ورزشی New Balance",
+            "id": 104,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 130
+          },
+          {
+            "title": "کفش ورزشی Reebok",
+            "id": 105,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 110
+          },
+          {
+            "title": "کفش ورزشی Under Armour",
+            "id": 106,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 140
+          },
+          {
+            "title": "کفش ورزشی Asics",
+            "id": 107,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 125
+          },
+          {
+            "title": "کفش ورزشی Sketchers",
+            "id": 108,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 95
+          },
+          {
+            "title": "کفش ورزشی Mizuno",
+            "id": 109,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 135
+          },
+          {
+            "title": "کفش ورزشی Salomon",
+            "id": 110,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 155
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "لپتاپ ایسوس",
+        "category": "کامپیوتر و لپتاپ",
+        "products": [
+          {
+            "title": "لپتاپ ایسوس VivoBook",
+            "id": 201,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 900
+          },
+          {
+            "title": "لپتاپ ایسوس ZenBook",
+            "id": 202,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1200
+          },
+          {
+            "title": "لپتاپ ایسوس ROG Strix",
+            "id": 203,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1500
+          },
+          {
+            "title": "لپتاپ ایسوس TUF Gaming",
+            "id": 204,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1100
+          },
+          {
+            "title": "لپتاپ ایسوس Chromebook",
+            "id": 205,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 600
+          },
+          {
+            "title": "لپتاپ ایسوس ProArt StudioBook",
+            "id": 206,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1800
+          },
+          {
+            "title": "لپتاپ ایسوس ExpertBook",
+            "id": 207,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1300
+          },
+          {
+            "title": "لپتاپ ایسوس Transformer Book",
+            "id": 208,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 800
+          },
+          {
+            "title": "لپتاپ ایسوس VivoBook Flip",
+            "id": 209,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 950
+          },
+          {
+            "title": "لپتاپ ایسوس VivoBook S",
+            "id": 210,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1000
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "تلویزیون سامسونگ",
+        "category": "لوازم خانگی",
+        "products": [
+          {
+            "title": "تلویزیون سامسونگ 32 اینچ",
+            "id": 301,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 400
+          },
+          {
+            "title": "تلویزیون سامسونگ 43 اینچ",
+            "id": 302,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 600
+          },
+          {
+            "title": "تلویزیون سامسونگ 55 اینچ",
+            "id": 303,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 800
+          },
+          {
+            "title": "تلویزیون سامسونگ 65 اینچ",
+            "id": 304,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1200
+          },
+          {
+            "title": "تلویزیون سامسونگ 75 اینچ",
+            "id": 305,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 2000
+          },
+          {
+            "title": "تلویزیون سامسونگ QLED 55 اینچ",
+            "id": 306,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 1500
+          },
+          {
+            "title": "تلویزیون سامسونگ QLED 65 اینچ",
+            "id": 307,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 2200
+          },
+          {
+            "title": "تلویزیون سامسونگ QLED 75 اینچ",
+            "id": 308,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 3000
+          },
+          {
+            "title": "تلویزیون سامسونگ QLED 85 اینچ",
+            "id": 309,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 5000
+          },
+          {
+            "title": "تلویزیون سامسونگ The Frame",
+            "id": 310,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 2500
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "پیراهن مردانه",
+        "category": "مد و پوشاک",
+        "products": [
+          {
+            "title": "پیراهن مردانه زارا",
+            "id": 401,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 50
+          },
+          {
+            "title": "پیراهن مردانه H&M",
+            "id": 402,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 40
+          },
+          {
+            "title": "پیراهن مردانه Nike",
+            "id": 403,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 60
+          },
+          {
+            "title": "پیراهن مردانه Adidas",
+            "id": 404,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 70
+          },
+          {
+            "title": "پیراهن مردانه Lacoste",
+            "id": 405,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 80
+          },
+          {
+            "title": "پیراهن مردانه Tommy Hilfiger",
+            "id": 406,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 90
+          },
+          {
+            "title": "پیراهن مردانه Calvin Klein",
+            "id": 407,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 85
+          },
+          {
+            "title": "پیراهن مردانه Ralph Lauren",
+            "id": 408,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 100
+          },
+          {
+            "title": "پیراهن مردانه Hugo Boss",
+            "id": 409,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 110
+          },
+          {
+            "title": "پیراهن مردانه Armani",
+            "id": 410,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 120
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "غذای خشک گربه",
+        "category": "پت شاپ",
+        "products": [
+          {
+            "title": "غذای خشک گربه Royal Canin",
+            "id": 501,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 20
+          },
+          {
+            "title": "غذای خشک گربه Whiskas",
+            "id": 502,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 15
+          },
+          {
+            "title": "غذای خشک گربه Purina",
+            "id": 503,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 25
+          },
+          {
+            "title": "غذای خشک گربه Meow Mix",
+            "id": 504,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 18
+          },
+          {
+            "title": "غذای خشک گربه Hills",
+            "id": 505,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 22
+          },
+          {
+            "title": "غذای خشک گربه Felix",
+            "id": 506,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 17
+          },
+          {
+            "title": "غذای خشک گربه Cat Chow",
+            "id": 507,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 19
+          },
+          {
+            "title": "غذای خشک گربه Sheba",
+            "id": 508,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 16
+          },
+          {
+            "title": "غذای خشک گربه Friskies",
+            "id": 509,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 14
+          },
+          {
+            "title": "غذای خشک گربه Iams",
+            "id": 510,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 21
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "لامپ دیواری LED",
+        "category": "دکوراسیون خانه",
+        "products": [
+          {
+            "title": "لامپ دیواری LED ساده",
+            "id": 601,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 30
+          },
+          {
+            "title": "لامپ دیواری LED با طراحی مدرن",
+            "id": 602,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 40
+          },
+          {
+            "title": "لامپ دیواری LED با کنترل از راه دور",
+            "id": 603,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 50
+          },
+          {
+            "title": "لامپ دیواری LED با رنگ‌های تغییر پذیر",
+            "id": 604,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 60
+          },
+          {
+            "title": "لامپ دیواری LED با حسگر حرکت",
+            "id": 605,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 70
+          },
+          {
+            "title": "لامپ دیواری LED آبی رنگ",
+            "id": 606,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 35
+          },
+          {
+            "title": "لامپ دیواری LED قرمز رنگ",
+            "id": 607,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 35
+          },
+          {
+            "title": "لامپ دیواری LED سبز رنگ",
+            "id": 608,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 35
+          },
+          {
+            "title": "لامپ دیواری LED زرد رنگ",
+            "id": 609,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 35
+          },
+          {
+            "title": "لامپ دیواری LED سفید رنگ",
+            "id": 610,
+            "cover": "/public/docs/images/courses/product.jpg",
+            "price": 35
+          }
+        ]
+      }
+    ]
+  
 }

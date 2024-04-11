@@ -7,7 +7,6 @@ import _ from "lodash";
 
 export default function Mobile() {
   const {menus} = useSelector(state => state.client)
-  console.log(menus)
   const [menuShow, setMenuShow] = useState(false);
   return (
     <>

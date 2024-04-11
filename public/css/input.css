@@ -37,13 +37,17 @@ body {
 }
 
 .child-center {
-    @apply chlild:flex chlild:items-center chlild:justify-center
+    @apply child:flex child:items-center child:justify-center
 }
 
 .child-ic {
-    @apply chlild:flex chlild:items-center 
+    @apply child:flex child:items-center 
 }
 
 .child-between {
-    @apply chlild:flex chlild:items-center chlild:justify-between
+    @apply child:flex child:items-center child:justify-between
+}
+
+.child-col-center {
+    @apply child:flex child:flex-col child:gap-2 child:items-center child:justify-center
 }

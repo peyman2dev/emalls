@@ -1,9 +1,9 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import ApiClient from "../../API/Axios/ApiClient/ApiClient";
+import ajax from "../../API/Axios/Ajax/ajax";
 
 export const getMenusFromClient = createAsyncThunk(
-    "apiClient", async () => {
-    return ApiClient.get("/menus")
+    "ajax", async () => {
+    return ajax.get("/menus")
     .then(response => response.data)
     .then(data => data)
     .catch(err => {
@@ -11,3 +11,11 @@ export const getMenusFromClient = createAsyncThunk(
     })
 });
 
+
+
+
+export const getProductsFromClient = createAsyncThunk(
+    async () => {
+        return ajax.get('/products',)
+    }
+)

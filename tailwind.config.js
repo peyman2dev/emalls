@@ -26,8 +26,8 @@ export default {
   },
   plugins: [
     function ({ addVariant }) {
-      addVariant("chlild", "& > *");
-      addVariant("chlild-hover", "& > *:hover");
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
     },
   ],
 };
