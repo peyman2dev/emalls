@@ -6,11 +6,14 @@ export default {
       sm: "568px",
       md: "768px",
       lg: "992px",
-      xl: "1280px",
+      xl: "1296px",
     },
     extend: {
       container: {
         center: true
+      },
+      transitionProperty: {
+        'height': 'height'
       },
       fontFamily: {
         "IranYekan": "IranYekan"

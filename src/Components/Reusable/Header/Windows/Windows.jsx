@@ -34,7 +34,7 @@ export default function Windows() {
   };
 
   return (
-    <nav className="xl:visible  py-6 xl:flex xl:justify-between xl:items-center hidden invisible px-[108px]">
+    <nav className="xl:visible  py-2 xl:flex xl:justify-between container xl:items-center hidden invisible">
       <div className="ic gap-10">
         <div>
           <Link>
@@ -42,17 +42,17 @@ export default function Windows() {
           </Link>
         </div>
 
-        <ul className="ic xl:gap-10 lg:gap-4  lg:text-sm xl:text-base">
+        <ul className="ic   gap-4  lg:text-sm ">
           {/* Categories Button */}
           <li className="ic gap-3 relative">
             {/* Categories Button */}
             <button onClick={() => setShow(!show)} className="ic gap-3">
               <span>
-                <img src="/public/docs/svgs/category.svg" alt="" />
+                <img src="/public/docs/svgs/category.svg" width={18} alt="" />
               </span>
               <span>دسته بندی کالاها</span>
               <span>
-                <img src="/public/docs/svgs/dropdown.svg" alt="" />
+                <img src="/public/docs/svgs/dropdown.svg" width={12} alt="" />
               </span>
             </button>
 
@@ -128,20 +128,24 @@ export default function Windows() {
               </div>
             </ul>
           </li>
+          
+          {/* Articles */}
           <li>
-            <Link className="flex items-center gap-3">
+            <Link className="flex items-center gap-1">
               <span>
-                <img src="/public/docs/svgs/articles.svg" alt="" width={26} />
+                <img src="/public/docs/svgs/articles.svg" alt="" width={21} />
               </span>
               <span>
                 مقالات
               </span>
             </Link>
           </li>
+
+          {/* Shops */}
           <li>
-            <Link className="flex items-center gap-3">
+            <Link className="flex items-center gap-1">
               <span>
-                <img src="/public/docs/svgs/shop.svg" alt="" width={26} />
+                <img src="/public/docs/svgs/shop.svg" alt="" width={21} />
               </span>
               <span>
                 فروشگاه ها
@@ -149,7 +153,7 @@ export default function Windows() {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-3">
+            <Link className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
@@ -159,7 +163,7 @@ export default function Windows() {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-3">
+            <Link className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
@@ -170,9 +174,9 @@ export default function Windows() {
           </li>
         </ul>
       </div>
-      <div className="ic gap-4 chlild:duration-300 chlild:rounded-2xl">
-        <div className="h-14  overflow-hidden border hover:bg-slate-100">
-          <Link className="ic gap-3 h-full px-5">
+      <div className="ic gap-4 text-sm chlild:duration-300 chlild:rounded-lg">
+        <div className="h-10  overflow-hidden border hover:bg-slate-100">
+          <Link className="ic gap-2 h-full px-2">
             <span>
               <img src="/public/docs/svgs/user.svg" alt="" />
             </span>
@@ -181,10 +185,10 @@ export default function Windows() {
             </span>
           </Link>
         </div>
-        <div className="bg-[#ff5f55] text-white    h-14 chlild:h-full shadow-2xl hover:shadow-[#ff6055a9] shadow-[#ff605565]">
-                      <Link className="flex items-center gap-3 px-4">
+        <div className="bg-[#ff5f55] text-white    h-10 chlild:h-full drop-shadow-2xl shadow-secondary ">
+                      <Link className="flex items-center gap-2 px-3">
                         <span>
-                          <Shop />
+                          <Shop size={18}/>
                         </span>
                         <span>
                           ثبت فروشگاه
