@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Hero/Hero'
 import HeroSlider from '../HeroSlider/HeroSlider'
 import Categories from '../Categories/Categories'
+import Products from '../Products/Products'
 
 export default function Main() {
   return (
@@ -9,6 +10,7 @@ export default function Main() {
         <Hero />
         <HeroSlider />
         <Categories />
+        <Products />
     </main>
   )
 }

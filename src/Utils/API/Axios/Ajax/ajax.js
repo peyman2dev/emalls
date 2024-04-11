@@ -8,4 +8,8 @@ const ajax = axios.create({
   baseURL: DATABASE_URL + DATABASE_PORT,
 });
 
+// axios.interceptors.response.use(response => {
+//   return response
+// }, err => console.log(err) )
+
 export default ajax;

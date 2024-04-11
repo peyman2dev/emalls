@@ -3,12 +3,14 @@ import { getMenusFromClient } from "../Ducks/Ducks";
 
 const apiClient = createSlice({
   name: "apiClient",
-  initialState: { menus: [] },
+  initialState: { products: [],menus: [] },
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getMenusFromClient.fulfilled, (state, action) => {
+    builder
+    .addCase(getMenusFromClient.fulfilled, (state, action) => {
          state.menus = action.payload
-    });
+    })
+
   },
 });
 

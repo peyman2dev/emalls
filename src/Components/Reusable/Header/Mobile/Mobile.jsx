@@ -65,7 +65,7 @@ export default function Mobile() {
         <main className="divide-y-2 mt-4 divide-black/10">
           {menus && menus.length ? 
           _.map(menus, (menu,index) => (
-            <NavItem {...menu}/>
+            <NavItem key={index}  {...menu}/>
           ))
           :
           ""
