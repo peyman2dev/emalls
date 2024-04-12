@@ -10,7 +10,7 @@ export default function Mobile() {
   const [menuShow, setMenuShow] = useState(false);
   return (
     <>
-      <nav className="lg:hidden lg:invisible p-4 flex items-center justify-between">
+      <nav className="xl:hidden xl:invisible p-4 flex items-center justify-between">
         <div>
           <button
             className="flex-center"

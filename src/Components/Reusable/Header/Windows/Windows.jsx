@@ -42,7 +42,7 @@ export default function Windows() {
           </Link>
         </div>
 
-        <ul className="ic   gap-4  lg:text-sm ">
+        <ul className="ic   gap-4   ">
           {/* Categories Button */}
           <li className="ic gap-3 relative">
             {/* Categories Button */}
@@ -59,7 +59,7 @@ export default function Windows() {
             {/* Menu Open */}
             <ul
               onClick={() => setShow(!show)}
-              className={`w-screen top-[10%] ${
+              className={`w-screen top-[6.5%] ${
                 show ? "" : "opacity-0 invisible"
               } duration-150 flex justify-center  pt-3  right-0 h-screen bg-black/30 z-20 fixed`}
             >

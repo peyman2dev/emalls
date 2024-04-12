@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getMenusFromClient } from "../Ducks/Ducks";
+import { getMenusFromClient, getProductsFromApiClient } from "../Ducks/Ducks";
 
 const apiClient = createSlice({
   name: "apiClient",
@@ -9,6 +9,12 @@ const apiClient = createSlice({
     builder
     .addCase(getMenusFromClient.fulfilled, (state, action) => {
          state.menus = action.payload
+    })
+    .addCase(getProductsFromApiClient.fulfilled,(state,action) => {
+      state.products = action.payload
+    })
+    .addCase(getProductsFromApiClient.rejected, (state,action) => {
+      console.log(action)
     })
 
   },

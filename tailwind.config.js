@@ -16,7 +16,8 @@ export default {
         'height': 'height'
       },
       fontFamily: {
-        "IranYekan": "IranYekan"
+        "IranYekan": "IranYekan",
+        "price": "price",
       },
       colors: {
         main: "#2a2d53",

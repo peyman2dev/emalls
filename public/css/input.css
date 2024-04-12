@@ -4,50 +4,50 @@
 @tailwind variants;
 
 @font-face {
-    font-family: "IranYekan";
-    src: url(../fonts/iranyekan/IRANYekan.woff);
+  font-family: "IranYekan";
+  src: url(../fonts/iranyekan/IRANYekan.woff);
 }
-
+@font-face {
+  font-family: "price";
+  src: url(../fonts/dana/Dana.woff);
+}
 
 body {
-    @apply font-IranYekan  max-w-[1920px] mx-auto text-[#2a2d53]
+  @apply font-IranYekan  max-w-[1920px] mx-auto text-[#2a2d53];
 }
 
-
-
 .between {
-    @apply flex items-center justify-between
+  @apply flex items-center justify-between;
 }
 
 .flex-center {
-    @apply flex items-center justify-center
+  @apply flex items-center justify-center;
 }
 
 .ic {
-    @apply flex items-center
+  @apply flex items-center;
 }
 
 .flex-end {
-    @apply flex items-center justify-end
+  @apply flex items-center justify-end;
 }
 
-
 .col-center {
-    @apply flex items-center justify-center flex-col 
+  @apply flex items-center justify-center flex-col;
 }
 
 .child-center {
-    @apply child:flex child:items-center child:justify-center
+  @apply child:flex child:items-center child:justify-center;
 }
 
 .child-ic {
-    @apply child:flex child:items-center 
+  @apply child:flex child:items-center;
 }
 
 .child-between {
-    @apply child:flex child:items-center child:justify-between
+  @apply child:flex child:items-center child:justify-between;
 }
 
 .child-col-center {
-    @apply child:flex child:flex-col child:gap-2 child:items-center child:justify-center
+  @apply child:flex child:flex-col child:gap-2 child:items-center child:justify-center;
 }
