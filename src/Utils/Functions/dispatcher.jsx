@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { getMenusFromClient, getProductsFromApiClient } from '../Redux/Ducks/Ducks'
+import { getArticlesFromClient, getMenusFromClient, getPricesFromClient, getProductsFromApiClient } from '../Redux/Ducks/Ducks'
 
 export default function dispatcher() {
     const dispatch = useDispatch()
@@ -8,5 +8,7 @@ export default function dispatcher() {
         // Get Webstie Menus
         dispatch(getProductsFromApiClient())
         dispatch(getMenusFromClient())
+        dispatch(getPricesFromClient())
+        dispatch(getArticlesFromClient())
     },[])
 }

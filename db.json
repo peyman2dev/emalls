@@ -1294,112 +1294,214 @@
   ],
   "articles": [
     {
-      "text": "چیدمان مبل راحتی برای انواع پذیرایی",
+      "title": "چیدمان مبل راحتی برای انواع پذیرایی",
       "date": "نهم آبان ۱۴۰۲",
       "to": "/articles/furniture-layout",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article01.jpg"
     },
     {
-      "text": "مدل لباس مجلسی دخترانه برای تالار 1402",
+      "title": "مدل لباس مجلسی دخترانه برای تالار 1402",
       "date": "سی ام مهر ۱۴۰۲",
       "to": "/articles/formal-dresses",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article02.jpg"
     },
     {
-      "text": "مدل کت و دامن جدید 1402",
+      "title": "مدل کت و دامن جدید 1402",
       "date": "سی ام مهر ۱۴۰۲",
       "to": "/articles/new-coat-skirt",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article03.jpg"
     },
     {
-      "text": "مقاله راهنمای خرید مبلمان",
+      "title": "مقاله راهنمای خرید مبلمان",
       "date": "دهم آذر ۱۴۰۲",
       "to": "/articles/furniture-buying-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article04.jpg"
     },
     {
-      "text": "آشنایی با رنگ‌های مدرن برای دکوراسیون داخلی",
+      "title": "آشنایی با رنگ‌های مدرن برای دکوراسیون داخلی",
       "date": "بیست و سوم آبان ۱۴۰۲",
       "to": "/articles/modern-interior-colors",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article05.jpg"
     },
     {
-      "text": "راهنمای طراحی آشپزخانه کوچک",
+      "title": "راهنمای طراحی آشپزخانه کوچک",
       "date": "دهم بهمن ۱۴۰۲",
       "to": "/articles/small-kitchen-design-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article06.jpg"
     },
     {
-      "text": "مدل مبلمان آشپزخانه با طراحی مدرن",
+      "title": "مدل مبلمان آشپزخانه با طراحی مدرن",
       "date": "بیست و پنجم بهمن ۱۴۰۲",
       "to": "/articles/modern-kitchen-furniture",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article07.jpg"
     },
     {
-      "text": "راهنمای انتخاب رنگ مناسب برای اتاق خواب",
+      "title": "راهنمای انتخاب رنگ مناسب برای اتاق خواب",
       "date": "سی ام بهمن ۱۴۰۲",
       "to": "/articles/bedroom-color-selection-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article08.jpg"
     },
     {
-      "text": "مدل های جدید کمد لباس برای اتاق خواب",
+      "title": "مدل های جدید کمد لباس برای اتاق خواب",
       "date": "دهم اسفند ۱۴۰۲",
       "to": "/articles/new-bedroom-wardrobe-designs",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article09.jpg"
     },
     {
-      "text": "راهنمای تزیین سالن پذیرایی با سبک روستیک",
+      "title": "راهنمای تزیین سالن پذیرایی با سبک روستیک",
       "date": "بیست و سوم اسفند ۱۴۰۲",
       "to": "/articles/rustic-living-room-decor-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article10.jpg"
     },
     {
-      "text": "مدل های میز تلویزیون با طراحی مدرن",
+      "title": "مدل های میز تلویزیون با طراحی مدرن",
       "date": "سی ام اسفند ۱۴۰۲",
       "to": "/articles/modern-tv-stand-designs",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article11.jpg"
     },
     {
-      "text": "راهنمای انتخاب رنگ برای دکوراسیون اداری",
+      "title": "راهنمای انتخاب رنگ برای دکوراسیون اداری",
       "date": "دهم فروردین ۱۴۰۳",
       "to": "/articles/office-decoration-color-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article12.jpg"
     },
     {
-      "text": "مدل های جدید میز ناهارخوری با طراحی مدرن",
+      "title": "مدل های جدید میز ناهارخوری با طراحی مدرن",
       "date": "بیست و پنجم فروردین ۱۴۰۳",
       "to": "/articles/modern-dining-table-designs",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article13.jpg"
     },
     {
-      "text": "راهنمای تزیین اتاق کودک با سبک مینیمال",
+      "title": "راهنمای تزیین اتاق کودک با سبک مینیمال",
       "date": "سی ام فروردین ۱۴۰۳",
       "to": "/articles/minimalist-kids-room-decor-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article14.jpg"
     },
     {
-      "text": "مدل های جدید میز کامپیوتر با طراحی ارگونومیک",
+      "title": "مدل های جدید میز کامپیوتر با طراحی ارگونومیک",
       "date": "دهم اردیبهشت ۱۴۰۳",
       "to": "/articles/ergonomic-computer-desk-designs",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article15.jpg"
     },
     {
-      "text": "راهنمای تزیین حمام با سبک مدرن",
+      "title": "راهنمای تزیین حمام با سبک مدرن",
       "date": "بیست و سوم اردیبهشت ۱۴۰۳",
       "to": "/articles/modern-bathroom-decor-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article16.jpg"
     },
     {
-      "text": "مدل های جدید کمد دیواری با طراحی مدرن",
+      "title": "مدل های جدید کمد دیواری با طراحی مدرن",
       "date": "سی ام اردیبهشت ۱۴۰۳",
       "to": "/articles/modern-wall-closet-designs",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article17.jpg"
     },
     {
-      "text": "راهنمای انتخاب کاغذ دیواری با طرح های مدرن",
+      "title": "راهنمای انتخاب کاغذ دیواری با طرح های مدرن",
       "date": "دهم خرداد ۱۴۰۳",
       "to": "/articles/modern-wallpaper-selection-guide",
-      "cover": ""
+      "cover": "/public/docs/images/articles/article18.jpg"
+    }
+  ],
+  "prices": [
+    {
+      "title": "قیمت گوشی سامسونگ a73",
+      "url": "/samsung-a73-price"
+    },
+    {
+      "title": "قیمت سامسونگ a32",
+      "url": "/samsung-a32-price"
+    },
+    {
+      "title": "گوشی تا 50 میلیون",
+      "url": "/phone-up-to-50-million-price"
+    },
+    {
+      "title": "گوشی تا 35 میلیون",
+      "url": "/phone-up-to-35-million-price"
+    },
+    {
+      "title": "قیمت اسباب بازی",
+      "url": "/toy-price"
+    },
+    {
+      "title": "لپ تاپ تا 30 میلیون",
+      "url": "/laptop-up-to-30-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 20 میلیون",
+      "url": "/laptop-up-to-20-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 40 میلیون",
+      "url": "/laptop-up-to-40-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 15 میلیون",
+      "url": "/laptop-up-to-15-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 25 میلیون",
+      "url": "/laptop-up-to-25-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 50 میلیون",
+      "url": "/laptop-up-to-50-million-price"
+    },
+    {
+      "title": "لپ تاپ تا 45 میلیون",
+      "url": "/laptop-up-to-45-million-price"
+    },
+    {
+      "title": "تلویزیون تا 10 میلیون",
+      "url": "/tv-up-to-10-million-price"
+    },
+    {
+      "title": "تلویزیون تا 12 میلیون",
+      "url": "/tv-up-to-12-million-price"
+    },
+    {
+      "title": "تلویزیون تا 15 میلیون",
+      "url": "/tv-up-to-15-million-price"
+    },
+    {
+      "title": "تلویزیون تا 20 میلیون",
+      "url": "/tv-up-to-20-million-price"
+    },
+    {
+      "title": "تلویزیون تا 25 میلیون",
+      "url": "/tv-up-to-25-million-price"
+    },
+    {
+      "title": "تلویزیون تا 30 میلیون",
+      "url": "/tv-up-to-30-million-price"
+    },
+    {
+      "title": "تلویزیون تا 40 میلیون",
+      "url": "/tv-up-to-40-million-price"
+    },
+    {
+      "title": "تلویزیون تا 50 میلیون",
+      "url": "/tv-up-to-50-million-price"
+    },
+    {
+      "title": "قیمت گوشت مرغ",
+      "url": "/chicken-meat-price"
+    },
+    {
+      "title": "قیمت روز زعفران",
+      "url": "/saffron-price"
+    },
+    {
+      "title": "قیمت قند و شکر",
+      "url": "/sugar-price"
+    },
+    {
+      "title": "قیمت گوشت گوسفندی و گوساله",
+      "url": "/sheep-and-calf-meat-price"
+    },
+    {
+      "title": "قیمت برنج ایرانی",
+      "url": "/iranian-rice-price"
     }
   ]
 }

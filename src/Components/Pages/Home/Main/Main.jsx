@@ -15,8 +15,8 @@ export default function Main() {
         <Categories />
         <Products />
         <Banner img={"/public/docs/images/banners/4.jpg"} alt={"محصولات آرایشی و بهداشتی کامان"}/>
-        <PriceList />
         <Articles />
+        <PriceList />
     </main>
   )
 }
