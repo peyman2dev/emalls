@@ -6,7 +6,7 @@ import _ from 'lodash'
 export default function Products() {
     const {products} = useSelector(state => state.client)
   return (
-    <section >
+    <section className='w-[95%] mx-auto md:w-full'>
       {
         products && products.length ?
         _.map(products, (category, index) => (

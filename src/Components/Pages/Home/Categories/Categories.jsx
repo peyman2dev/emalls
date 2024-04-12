@@ -22,7 +22,7 @@ export default function Categories() {
     <section className="w-full container mt-10">
       <motion.div
         ref={carousel}
-        className="carousel w-full overflow-hidden  p-8"
+        className="carousel w-full overflow-hidden  sm:p-8"
       >
         <motion.div
           className="inner-carousel child:max-h-[106px] child:min-w-[85px!important] flex gap-3 child:flex child:gap-2 child:items-center child:flex-col "
