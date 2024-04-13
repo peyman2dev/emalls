@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ProductCard(props) {
+
   return (
     <article className='w-full border overflow-hidden p-3 rounded-sm group hover:shadow-lg duration-150 shadow-black/5'>
-      <Link>
+      <Link to={`/product/${props.title.split(' ').join('-')}`}>
       <header className='flex items-center justify-center mb-2.5  sm:max-h-[220px] max-h-[240px] h-[230px] sm:h-[220px]'>
           <img src={props.cover} alt="" className='w-[90%] h-[90%] object-cover duration-150  group-hover:scale-110' />
       </header>

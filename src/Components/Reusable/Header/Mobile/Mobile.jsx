@@ -4,9 +4,12 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import NavItem from "./NavItem/NavItem";
 import _ from "lodash";
+import useModal from "../../../../Utils/Hooks/useModal";
+import Login from "../../ModalElems/Auth/Login/Login";
 
 export default function Mobile() {
-  const {menus} = useSelector(state => state.client)
+  const modalOpts = useModal();
+  const { menus } = useSelector((state) => state.client);
   const [menuShow, setMenuShow] = useState(false);
   return (
     <>
@@ -25,13 +28,19 @@ export default function Mobile() {
           </Link>
         </div>
         <div>
-          <Link>
+          <button
+            onClick={() => {
+              modalOpts.setModalShow(!modalOpts.modalShow)
+              modalOpts.setModalEl(<Login />);
+            }}
+            className="flex-center"
+          >
             <img
               src="/public/docs/svgs/user.svg"
               alt="ورود / عضویت"
-              className="w-6"
+              className="w-7"
             />
-          </Link>
+          </button>
         </div>
       </nav>
       <section
@@ -63,13 +72,9 @@ export default function Mobile() {
           </div>
         </header>
         <main className="divide-y-2 mt-4 divide-black/10">
-          {menus && menus.length ? 
-          _.map(menus, (menu,index) => (
-            <NavItem key={index}  {...menu}/>
-          ))
-          :
-          ""
-        }
+          {menus && menus.length
+            ? _.map(menus, (menu, index) => <NavItem key={index} {...menu} />)
+            : ""}
         </main>
       </div>
     </>

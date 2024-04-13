@@ -1,12 +1,16 @@
 import { ArrowLeft2, Shop } from "iconsax-react";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import _ from "lodash";
+import useModal from "../../../../Utils/Hooks/useModal";
+import Login from "../../ModalElems/Auth/Login/Login";
 
 export default function Windows() {
   const { menus } = useSelector((state) => state.client);
   const [show, setShow] = useState(false);
+  const  {modalEl, setModalEl, modalShow, setModalShow} = useModal()
+
   const [target, setTarget] = useState({});
   const [finalItems, setFinalitems] = useState({});
   const [curretTarget, setCurrectTarget] = useState({});
@@ -30,7 +34,7 @@ export default function Windows() {
         return _item.title === item.title;
       })
     );
-    setFinalitems(item.submenus)
+    setFinalitems(item.submenus);
   };
 
   return (
@@ -95,7 +99,8 @@ export default function Windows() {
                           <Link
                             onMouseEnter={() => filterTheLastTab(sub)}
                             className={`py-1 ${
-                              curretTarget && curretTarget[0] &&
+                              curretTarget &&
+                              curretTarget[0] &&
                               curretTarget[0].title === sub.title
                                 ? "text-red-500"
                                 : ""
@@ -128,16 +133,14 @@ export default function Windows() {
               </div>
             </ul>
           </li>
-          
+
           {/* Articles */}
           <li>
             <Link className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/articles.svg" alt="" width={21} />
               </span>
-              <span>
-                مقالات
-              </span>
+              <span>مقالات</span>
             </Link>
           </li>
 
@@ -147,9 +150,7 @@ export default function Windows() {
               <span>
                 <img src="/public/docs/svgs/shop.svg" alt="" width={21} />
               </span>
-              <span>
-                فروشگاه ها
-              </span>
+              <span>فروشگاه ها</span>
             </Link>
           </li>
           <li>
@@ -157,9 +158,7 @@ export default function Windows() {
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
-              <span>
-                شرایط و قوانین
-              </span>
+              <span>شرایط و قوانین</span>
             </Link>
           </li>
           <li>
@@ -167,33 +166,30 @@ export default function Windows() {
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
-              <span>
-                درباره ما
-              </span>
+              <span>درباره ما</span>
             </Link>
           </li>
         </ul>
       </div>
       <div className="ic gap-4 text-sm child:duration-300 child:rounded-lg">
         <div className="h-10  overflow-hidden border hover:bg-slate-100">
-          <Link className="ic gap-2 h-full px-2">
+          <button onClick={() => {
+            setModalShow(!modalShow)
+            setModalEl(<Login />)
+          }} className="ic gap-2 h-full px-2">
             <span>
               <img src="/public/docs/svgs/user.svg" alt="" />
             </span>
-            <span>
-              ورود | عضویت
-            </span>
-          </Link>
+            <span>ورود | عضویت</span>
+          </button>
         </div>
         <div className="bg-[#ff5f55] text-white    h-10 child:h-full drop-shadow-2xl shadow-secondary ">
-                      <Link className="flex items-center gap-2 px-3">
-                        <span>
-                          <Shop size={18}/>
-                        </span>
-                        <span>
-                          ثبت فروشگاه
-                        </span>
-                      </Link>
+          <Link className="flex items-center gap-2 px-3">
+            <span>
+              <Shop size={18} />
+            </span>
+            <span>ثبت فروشگاه</span>
+          </Link>
         </div>
       </div>
     </nav>

@@ -10,7 +10,7 @@ export default function Products() {
       {
         products && products.length ?
         _.map(products, (category, index) => (
-          <ProductSection {...category} />
+          <ProductSection key={index} {...category} />
         ))
         :
         ""
