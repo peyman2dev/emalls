@@ -1,8 +1,23 @@
-# React + Vite
+# Emalls Application 🛒🛍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation 👨‍💻
 
-Currently, two official plugins are available:
+1️⃣- Install ``emalls-application`` with npm
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+    git clone https://github.com/peyman2dev/emalls.git
+    npm run dev
+```
+
+2️⃣- Then run the server 
+```bash
+    npx json-server --watch db.json --port 3000
+```
+
+
+    
+## Tech Stack
+
+**Client:** React JS, Redux JS, TailwindCSS
+
+
