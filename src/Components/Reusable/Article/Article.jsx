@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 export default function Article(props) {
   return (
-    <article className='rounded-lg pb-3 overflow-hidden border'>
+    <article className='rounded-lg pb-3 w-[90%] mx-auto lg:w-full overflow-hidden border group'>
         <Link  to={props.to}>
-        <header><img src={props.cover} alt="" /></header>
+        <header className='h-[229px] overflow-hidden'><img src={props.cover} alt="" className='h-[229px] duration-150 hover:scale-105 object-cover'/></header>
         <main className='p-3'>
             <h5 className='text-lg h-[56px] text-zinc-800 font-medium'>
                 {props.title}

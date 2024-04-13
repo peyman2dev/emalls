@@ -41,7 +41,7 @@ export default function Windows() {
     <nav className="xl:visible  py-2 xl:flex xl:justify-between container xl:items-center hidden invisible">
       <div className="ic gap-10">
         <div>
-          <Link>
+          <Link to={'/'}>
             <img src="/public/docs/svgs/logo.svg" width={90} alt="" />
           </Link>
         </div>
@@ -136,7 +136,7 @@ export default function Windows() {
 
           {/* Articles */}
           <li>
-            <Link className="flex items-center gap-1">
+            <Link to={'/articles'} className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/articles.svg" alt="" width={21} />
               </span>
@@ -146,7 +146,7 @@ export default function Windows() {
 
           {/* Shops */}
           <li>
-            <Link className="flex items-center gap-1">
+            <Link to={'/shops'} className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/shop.svg" alt="" width={21} />
               </span>
@@ -154,7 +154,7 @@ export default function Windows() {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-1">
+            <Link to={'/policy-and-privacy'} className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
@@ -162,7 +162,7 @@ export default function Windows() {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-1">
+            <Link to={'/about-us'} className="flex items-center gap-1">
               <span>
                 <img src="/public/docs/svgs/policies.svg" alt="" width={26} />
               </span>
