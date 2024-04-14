@@ -17,10 +17,9 @@ export const getMenusFromClient = createAsyncThunk(
 export const getProductsFromApiClient = createAsyncThunk(
   "apiClient/getProductsFromApiClient",
   async () => {
-    return ajax
-      .get("/products")
-      .then((response) => response.data)
-      .then((data) => data);
+    return ajax.get('/')
+    .then(response => response.data)
+    .then(data => data)
   }
 );
 

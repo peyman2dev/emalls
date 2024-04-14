@@ -6,6 +6,7 @@ import Products from '../Products/Products'
 import PriceList from '../PriceList/PriceList'
 import Articles from '../../../Reusable/Articles/Articles'
 import Banner from '../../../Reusable/Banner/Banner'
+import BestSellings from '../BestSellings/BestSellings'
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
         <Hero />
         <HeroSlider />
         <Categories />
+        <BestSellings />
         <Products />
         <Banner img={"/public/docs/images/banners/4.jpg"} alt={"محصولات آرایشی و بهداشتی کامان"}/>
         <Articles />

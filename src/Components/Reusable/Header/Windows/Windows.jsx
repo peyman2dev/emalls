@@ -183,7 +183,7 @@ export default function Windows() {
             <span>ورود | عضویت</span>
           </button>
         </div>
-        <div className="bg-[#ff5f55] text-white    h-10 child:h-full drop-shadow-2xl shadow-secondary ">
+        <div className="bg-[#ff5f55] text-white    h-10 child:h-full shadow-lg shadow-secondary/30 hover:shadow-secondary/20 ">
           <Link className="flex items-center gap-2 px-3">
             <span>
               <Shop size={18} />

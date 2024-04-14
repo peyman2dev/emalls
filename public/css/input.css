@@ -13,11 +13,39 @@
 }
 
 body {
-  @apply font-IranYekan  max-w-[1920px] mx-auto text-[#2a2d53];
+  @apply font-IranYekan  max-w-[1920px] mx-auto text-[#2a2d53] bg-[#ecf0f6]
 }
 
 .between {
   @apply flex items-center justify-between;
+}
+
+.product-card {
+  @apply  bg-white rounded-xl shadow-lg shadow-black/5 overflow-hidden h-[458px]
+}
+
+.product-title {
+  @apply font-bold min-h-[56px] text-lg duration-150 hover:text-secondary line-clamp-2
+}
+
+.product-card header {
+  @apply w-full max-h-[309px] h-[309px] overflow-hidden child:w-full child:h-full child:object-cover
+}
+
+.product-card header img {
+  @apply w-full rounded-t-2xl min-h-[309px!important]
+}
+
+.price-discount {
+  @apply select-none px-3 font-price text-sm bg-red-500 text-white pt-0.5 rounded-xl
+}
+/* 
+.product-card main  {
+  @apply p-3 my-3
+} */
+
+.product-card footer {
+  @apply p-3
 }
 
 .flex-center {
