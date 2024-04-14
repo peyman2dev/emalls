@@ -46,10 +46,9 @@ export const getPricesFromClient = createAsyncThunk(
 
 export const searchFromClient = createAsyncThunk(
   "apiClient/searchFromClient",
-  async (query) => {
-    return ajax
-      .get(`search/?=q=${query}/`)
-      .then((response) => response.data)
-      .then((resolve) => resolve);
+  async ({query}) => {
+    return ajax.get('search/?q=' + query)
+    .then(response => response.data)
+    .then(resolve => resolve)
   }
 );

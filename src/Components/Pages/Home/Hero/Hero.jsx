@@ -49,7 +49,7 @@ export default function Hero() {
             </span>
             <input
               type="text"
-              onKeyDown={(event) => searchHandler(event)}
+              onKeyUp={(event) => searchHandler(event)}
               className="outline-none w-full h-full px-12 placeholder:text-sm placeholder:text-gray-500 text-black"
               placeholder="جستجوی نام, مرد یا برند کالا ..."
             />

@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductCard(props) {
-  const price = props.default_variant.price;
+  const price = parseFloat(props.default_variant.price.selling_price);
+  const _price = price.toString().slice(0, (price.toString().length - 1))
+
   return (
     <article className="product-card">
       {/* Product Header */}
@@ -19,13 +21,13 @@ export default function ProductCard(props) {
         <Link to={`/product/${props.id}`}>
           <h3
             title={props.title_en || props.title_fa}
-            className="product-title"
+            className="product-title tracking-tight"
           >
             {props.title_fa}
           </h3>
         </Link>
       </main>
-      <footer className={`between py-3 ${price.is_incredible ? "" : "my-3"}`}>
+      <footer className={`between py-3 ${props.default_variant.price.is_incredible ? "" : "my-3"}`}>
         <span
           className={
             props.default_variant.price.discount_percent ? "price-discount" : ""
@@ -36,11 +38,11 @@ export default function ProductCard(props) {
             : ""}
         </span>
         <div>
-          {price.is_incredible ? (
+          {props.default_variant.price.is_incredible ? (
             <div className="">
               <div className="ic gap-1">
                 <span className="font-price text-lg font-bold ">
-                  {price.selling_price.toLocaleString()}
+                  {Number(_price).toLocaleString()}
                 </span>
                 <span>
                   <img src="/public/docs/svgs/toman.svg" alt="price" />
@@ -48,13 +50,13 @@ export default function ProductCard(props) {
               </div>
               <div className="text-zinc-400 font-thin text-sm line-through">
                 <span className="font-price">
-                  {price.rrp_price.toLocaleString()}
+                  {props.default_variant.price.rrp_price.toLocaleString()}
                 </span>
               </div>
             </div>
           ) : (
             <div className="font-price ic font-bold text-lg gap-1">
-              <span>{price.selling_price.toLocaleString()}</span>
+              <span>{Number(_price).toLocaleString()}</span>
               <span>
                 <img src="/public/docs/svgs/toman.svg" alt="price" />
               </span>
