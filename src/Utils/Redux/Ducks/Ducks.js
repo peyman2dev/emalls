@@ -17,9 +17,10 @@ export const getMenusFromClient = createAsyncThunk(
 export const getProductsFromApiClient = createAsyncThunk(
   "apiClient/getProductsFromApiClient",
   async () => {
-    return ajax.get('/')
-    .then(response => response.data)
-    .then(data => data)
+    return ajax
+      .get("/")
+      .then((response) => response.data)
+      .then((data) => data);
   }
 );
 
@@ -36,8 +37,19 @@ export const getArticlesFromClient = createAsyncThunk(
 export const getPricesFromClient = createAsyncThunk(
   "apiClient/getPricesFromClient",
   async () => {
-    return ajax.get('/prices')
-    .then(response => response.data)
-    .then(result => result)
+    return ajax
+      .get("/prices")
+      .then((response) => response.data)
+      .then((result) => result);
+  }
+);
+
+export const searchFromClient = createAsyncThunk(
+  "apiClient/searchFromClient",
+  async (query) => {
+    return ajax
+      .get(`search/?=q=${query}/`)
+      .then((response) => response.data)
+      .then((resolve) => resolve);
   }
 );

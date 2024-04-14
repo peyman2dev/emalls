@@ -1,8 +1,20 @@
 import { Box, SearchNormal } from "iconsax-react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+
+  const searchHandler = (e) => {
+    setSearchQuery(e.target.value)
+    const {keyCode} = e
+    if (keyCode == 13 && searchQuery.length >= 2) {
+      location.pathname = `/search/${searchQuery}`
+    }
+  };
+
+
   return (
     <section className="lg:h-[450px] max-h-max    bg-[#0c0150] md:p-12 p-5 py-10 sm:p-10 relative">
       <section className="container between lg:flex-row flex-col gap-4  h-full">
@@ -35,16 +47,28 @@ export default function Hero() {
             <span className="absolute z-10 right-3 text-main">
               <Box />
             </span>
-            <input type="text" className="outline-none w-full h-full px-12 placeholder:text-sm placeholder:text-gray-500 text-black" placeholder="جستجوی نام, مرد یا برند کالا ..." />
-            <button className="absolute bg-secondary w-10 h-10 left-2 rounded-xl shadow-xl shadow-secondary/40 flex-center">
-              <SearchNormal className="text-white" size={16} variant="TwoTone"/>
-            </button>
+            <input
+              type="text"
+              onKeyDown={(event) => searchHandler(event)}
+              className="outline-none w-full h-full px-12 placeholder:text-sm placeholder:text-gray-500 text-black"
+              placeholder="جستجوی نام, مرد یا برند کالا ..."
+            />
+            <Link
+              to={`/search/${searchQuery}`}
+              className="absolute bg-secondary w-10 h-10 left-2 rounded-xl shadow-xl shadow-secondary/40 flex-center"
+            >
+              <SearchNormal
+                className="text-white"
+                size={16}
+                variant="TwoTone"
+              />
+            </Link>
           </div>
           {/* Quick Start Links */}
           <ul className="flex items-center gap-1 text-xs sm:text-sm  text-main font-medium mt-2">
             <li>
               <Link className="sm:px-4 px-2 py-2 rounded-md bg-white">
-              پیکسل
+                پیکسل
               </Link>
             </li>
             <li>
@@ -67,7 +91,6 @@ export default function Hero() {
                 ساعت مچی آنالوگ
               </Link>
             </li>
-     
           </ul>
         </div>
         <div className="relative z-10 lg:w-1/3 lg:visible lg:flex lg:justify-center lg:items-center hidden invisible text-white  ">

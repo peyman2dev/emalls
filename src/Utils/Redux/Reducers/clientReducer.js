@@ -12,6 +12,7 @@ const apiClient = createSlice({
     bestSellings: [],
     products: [],
     articles: [],
+    product: {},
     users: [],
     menus: [],
     prices: [],
@@ -23,6 +24,7 @@ const apiClient = createSlice({
         state.menus = action.payload;
       })
       .addCase(getProductsFromApiClient.fulfilled, (state, action) => {
+        console.log(action.payload.data)
         state.bestSellings = action.payload.data.best_selling_products;
         state.products = action.payload;
       })

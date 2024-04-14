@@ -684,6 +684,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -866,10 +871,6 @@ video {
   width: 5rem;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
 .w-7 {
   width: 1.75rem;
 }
@@ -941,6 +942,14 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[540px\] {
+  max-width: 540px;
+}
+
+.max-w-\[440px\] {
+  max-width: 440px;
 }
 
 .translate-x-\[1600px\] {
@@ -1026,6 +1035,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1421,6 +1434,10 @@ video {
   font-weight: 400;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .leading-\[23px\] {
   line-height: 23px;
 }
@@ -1531,6 +1548,10 @@ video {
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .opacity-0 {
@@ -1771,6 +1792,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.child\:rounded-xl > * {
+  border-radius: 0.75rem;
+}
+
 .child\:border > * {
   border-width: 1px;
 }
@@ -1782,6 +1807,10 @@ video {
 
 .child\:p-3 > * {
   padding: 0.75rem;
+}
+
+.child\:p-5 > * {
+  padding: 1.25rem;
 }
 
 .child\:px-3 > * {
@@ -1977,6 +2006,10 @@ video {
     min-width: 90px;
   }
 
+  .lg\:max-w-\[90px\] {
+    max-width: 90px;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2082,23 +2115,6 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.product-title {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  min-height: 56px;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  transition-duration: 150ms;
-}
-
-.product-title:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 95 85 / var(--tw-text-opacity));
-}
-
 .product-card header {
   height: 309px;
   max-height: 309px;
@@ -2137,10 +2153,28 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* 
-.product-card main  {
-  @apply p-3 my-3
-} */
+.product-card main {
+  padding: 0.75rem;
+}
+
+.product-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 56px;
+  max-height: 56px;
+  min-height: 56px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  transition-duration: 150ms;
+}
+
+.product-title:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 95 85 / var(--tw-text-opacity));
+}
 
 .product-card footer {
   padding: 0.75rem;
