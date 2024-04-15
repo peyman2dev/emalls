@@ -7,6 +7,7 @@ import _ from "lodash";
 import { ArrowRotateRight, SearchNormal } from "iconsax-react";
 import Production from "../../Components/Reusable/Production/Production";
 import RelatedSearchs from "../../Components/Pages/Search/RelatedSearchs/RelatedSearchs";
+import Searchbar from "../../Components/Pages/Search/Searchbar/Searchbar";
 
 export default function Search() {
   const { search } = useSelector((state) => state.client);
@@ -32,19 +33,20 @@ export default function Search() {
     <>
       <Header />
       <main className="my-20">
-        <section className="flex lg:flex-row flex-col gap-10 px-10">
-          <aside className="min-w-[300px]">aside</aside>
+        <section className="flex lg:flex-row flex-col sm:gap-8 p-3 sm:px-10">
+          <aside className="sm:min-w-[300px]">
+            <Searchbar />
+            <RelatedSearchs styles={"lg:visible lg:block hidden invisible"} searchs={search.related_search_words} />
+          </aside>
           <section className="content">
-        <RelatedSearchs searchs={search.related_search_words} />
-            <ul
-              id="search_products"
-            >
+            <ul id="search_products">
               {search && search.products
                 ? _.map(search.products, (product) => (
                     <Production key={product.id} {...product} />
                   ))
                 : ""}
             </ul>
+            <RelatedSearchs searchs={search.related_search_words} styles={"my-3 lg:hidden lg:invisible"}/>
           </section>
         </section>
       </main>
