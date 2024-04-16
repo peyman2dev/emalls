@@ -55,7 +55,6 @@ export default function Content() {
           </div>
         </div>
       </section>
-      <Sidebar />
     </section>
   );
 }

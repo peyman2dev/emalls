@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Comments from "../Comments/Comments";
 import Details from "../Details/Details";
+import Sellers from "../Sellers/Sellers";
 
 export default function Main() {
   const { product } = useContext(ProductContext);
@@ -71,6 +72,7 @@ export default function Main() {
       )}
       <Content />
       <Details />
+      <Sellers />
       <Comments />
     </main>
   );
