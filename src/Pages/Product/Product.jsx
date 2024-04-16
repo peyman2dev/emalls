@@ -10,7 +10,6 @@ export default function Product() {
   const [product, setProduct] = useState({});
   useEffect(() => {
     getProduct(productName).then((res) => setProduct(res.data));
-    console.log(product);
   }, [productName]);
   return (
     <>
