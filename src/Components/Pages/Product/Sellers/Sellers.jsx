@@ -1,11 +1,39 @@
 import { Shop } from "iconsax-react";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ProductContext from "../../../../Utils/Contexts/ProductContext";
-import _ from "lodash";
+import _, { isNull, isUndefined } from "lodash";
 import Seller from "../../../Reusable/Seller/Seller";
 
 export default function Sellers() {
   const { product } = useContext(ProductContext);
+  const [totalShow, setTotalShow] = useState(4);
+  const [maxReached, setMaxReached] = useState(false);
+  const [totalSellers, setTotalSellers] = useState(1);
+
+  const totalShowHandler = () => {
+    setTotalShow((prev) => prev + 10);
+    if (totalShow >= totalSellers) {
+      setTotalShow(4);
+    } else {
+      setMaxReached(false);
+    }
+  };
+
+  useEffect(() => {
+    if (!isUndefined(product) && product.product && product.product.variants) {
+      setTotalSellers(product.product.variants.length);
+    }
+
+    if (totalShow >= totalSellers) {
+      setMaxReached(true);
+    }
+  }, [totalShow, product]);
+
+
+
+  console.log(product.product.variants)
+
+
   return (
     <section className="bg-white p-5  rounded-2xl shadow-lg shadow-black/5">
       <header>
@@ -17,9 +45,17 @@ export default function Sellers() {
         </div>
       </header>
       <main className="my-10">
-        {product && product.product && product.product.variants
-          ? _.map(product.product.variants, (variant) => <Seller {...variant}/>)
-          : ""}
+        <div className="flex-end">
+          <p className="text-sm text-zinc-500">
+            <span className="font-price px-1 text-base text-green-600">
+              {totalSellers}
+            </span>
+            <span>فروشنده</span>
+          </p>
+        </div>
+        {_.slice(product.product.variants, 0, totalShow).map((variant) => (
+          <Seller key={variant.id} {...variant} />
+        ))}
       </main>
     </section>
   );

@@ -3,13 +3,6 @@ import _ from "lodash";
 import React, { useEffect, useState } from "react";
 
 export default function Comment(props) {
-  const [stars, setStars] = useState(5);
-  const [rates, setRates] = useState(5);
-
-
-  useEffect(() => {
-    setRates(props ? props.rate : 5);
-  }, [props]);
 
   return (
     <article className="p-4 my-5 w-full rounded-lg">
@@ -69,16 +62,16 @@ export default function Comment(props) {
         <p className="mt-5  text-justify text-sm">{props.body}</p>
 
         <div className="mt-4 space-y-2 text-xs font-medium child-ic child:gap-2">
-          {_.map(props.advantages, (advantage) => (
-            <div>
+          {_.map(props.advantages, (advantage, index) => (
+            <div key={index}>
               <span className="text-green-500">
                 <Add size={16} />
               </span>
               <span>{advantage}</span>
             </div>
           ))}
-          {_.map(props.disadvantages, (advantage) => (
-            <div>
+          {_.map(props.disadvantages, (advantage, index) => (
+            <div key={index}>
               <span className="text-red-500">
                 <Minus size={16} />
               </span>
@@ -91,7 +84,7 @@ export default function Comment(props) {
         <div></div>
         <div className="ic gap-3 text-sm font-price text-zinc-400">
           <button className="ic gap-1">
-            <span>{props.reactions.dislikes}</span>
+            <span>{props.reactions.likes}</span>
             <span>
               <Like1 size={16} />
             </span>

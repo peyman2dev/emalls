@@ -6,10 +6,8 @@ import _ from "lodash";
 export default function Details() {
   const [showMore, setShowMore] = useState(false);
   const { product } = useContext(ProductContext);
-  const length =
-    product && product.product && product.product.specifications
-      ? product.product.specifications[0].attributes.length
-      : 4;
+  const length = product.product.specifications[0].attributes.length;
+
   return (
     <section className="bg-white p-5  rounded-2xl shadow-lg shadow-black/5">
       <header>
@@ -36,14 +34,14 @@ export default function Details() {
                     product.product.specifications[0].attributes,
                     0,
                     showMore ? length : 4
-                  ).map((atr) => (
-                    <div className="py-6 flex min-h-10 flex-col space-y-2 lg:flex-row lg:gap-10">
+                  ).map((atr, index) => (
+                    <div key={index} className="py-6 flex min-h-10 flex-col space-y-2 lg:flex-row lg:gap-10">
                       <div className="min-w-[160px]">
                         <h6 className="text-sm text-zinc-500">{atr.title}:</h6>
                       </div>
                       <div>
-                        {_.map(atr.values, (val) => (
-                          <p className="text-sm">{val}</p>
+                        {_.map(atr.values, (val, index) => (
+                          <p key={index} className="text-sm">{val}</p>
                         ))}
                       </div>
                     </div>
@@ -65,14 +63,14 @@ export default function Details() {
             "Loading ..."
           )}
 
-          { length >= 5 &&
+          {length >= 5 && (
             <button
               className={`px-4 py-1.5 text-sm rounded-lg bg-sky-500 text-white`}
               onClick={() => setShowMore(!showMore)}
             >
               {showMore ? "کوتاه کردن" : "نمایش بیشتر"}
             </button>
-          }
+          )}
         </section>
       </main>
     </section>

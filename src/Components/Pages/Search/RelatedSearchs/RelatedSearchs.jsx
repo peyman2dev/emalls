@@ -12,8 +12,8 @@ export default function RelatedSearchs({ searchs, styles }) {
       </header>
       <main className="p-2 px-3 divide-y">
         {searchs && searchs.length ? (
-          _.map(searchs, (search) => (
-            <div className="text-sm duration-150 hover:bg-zinc-100/60 px-3 hover:rounded-lg tracking-tight">
+          _.map(searchs, (search, index) => (
+            <div key={index} className="text-sm duration-150 hover:bg-zinc-100/60 px-3 hover:rounded-lg tracking-tight">
               <Link to={`/search/${search}`} className="h-12 between">
                 <div className="ic gap-4">
                   <span>

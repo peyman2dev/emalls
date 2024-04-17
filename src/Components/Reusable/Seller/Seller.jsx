@@ -3,6 +3,7 @@ import _ from "lodash";
 import React from "react";
 
 export default function Seller(props) {
+  
   const Grade = (
     <span
       className={`px-1`}
@@ -16,7 +17,6 @@ export default function Seller(props) {
       {props.seller.grade.label}
     </span>
   );
-  console.log(props);
   return (
     <article className="px-8 odd:bg-gray-100/50  child:flex child:items-center child:gap-14 between rounded-lg min-h-[120px]">
       <section>
@@ -44,8 +44,8 @@ export default function Seller(props) {
         </div>
         <div>
           {props && props && props.shipment_methods
-            ? _.map(props.shipment_methods.providers, (provider) => (<div>
-                <p className="text-xs text-zinc-500 my-2">
+            ? _.map(props.shipment_methods.providers, (provider, index) => (<div key={index}>
+                <p  className="text-xs text-zinc-500 my-2">
                     {provider.title}
                 </p>
             </div>))

@@ -37,7 +37,6 @@ const apiClient = createSlice({
         state.prices = action.payload;
       })
       .addCase(searchFromClient.fulfilled, (state, action) => {
-        console.log(action.payload.data)
         state.search = action.payload.data;
       });
   },

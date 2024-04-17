@@ -6,7 +6,7 @@ export default {
       sm: "568px",
       md: "768px",
       lg: "992px",
-      xl: "1296px",
+      xl: "1380px",
     },
     extend: {
       container: {
