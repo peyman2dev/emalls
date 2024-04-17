@@ -600,6 +600,14 @@ video {
   position: relative;
 }
 
+.-bottom-3 {
+  bottom: -0.75rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -638,26 +646,6 @@ video {
 
 .top-\[6\.5\%\] {
   top: 6.5%;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-3 {
-  bottom: -0.75rem;
-}
-
-.-left-2 {
-  left: -0.5rem;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
-.-bottom-2 {
-  bottom: -0.5rem;
 }
 
 .z-10 {
@@ -893,6 +881,10 @@ video {
   min-height: 3.5rem;
 }
 
+.min-h-\[120px\] {
+  min-height: 120px;
+}
+
 .min-h-\[141px\] {
   min-height: 141px;
 }
@@ -912,10 +904,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[80px\] {
-  min-height: 80px;
 }
 
 .w-1 {
@@ -944,6 +932,10 @@ video {
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-7 {
@@ -982,10 +974,6 @@ video {
   width: 55px;
 }
 
-.w-\[70\%\] {
-  width: 70%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1014,12 +1002,12 @@ video {
   width: 100vw;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-\[98\%\] {
+  width: 98%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.min-w-\[160px\] {
+  min-width: 160px;
 }
 
 .min-w-\[203px\] {
@@ -1034,17 +1022,9 @@ video {
   min-width: 55px;
 }
 
-.min-w-\[80px\] {
-  min-width: 80px;
-}
-
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
-}
-
-.min-w-\[120px\] {
-  min-width: 120px;
 }
 
 .max-w-\[300px\] {
@@ -1087,6 +1067,10 @@ video {
 
 .resize {
   resize: both;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
 }
 
 .grid-cols-1 {
@@ -1155,22 +1139,16 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1397,6 +1375,11 @@ video {
   background-color: rgb(255 95 85 / 0.1);
 }
 
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
 .bg-sky-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
@@ -1471,10 +1454,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1508,6 +1487,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-0 {
@@ -1548,11 +1532,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-3 {
@@ -1713,6 +1692,11 @@ video {
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
 .text-main {
   --tw-text-opacity: 1;
   color: rgb(42 45 83 / var(--tw-text-opacity));
@@ -1776,29 +1760,6 @@ video {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.text-green-800 {
-  --tw-text-opacity: 1;
-  color: rgb(22 101 52 / var(--tw-text-opacity));
-}
-
-.text-green-700 {
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\$\{\}\] {
-  color: ${};
 }
 
 .line-through {
@@ -2002,6 +1963,10 @@ video {
   margin-top: 0px;
 }
 
+.odd\:bg-gray-100\/50:nth-child(odd) {
+  background-color: rgb(243 244 246 / 0.5);
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -2109,16 +2074,12 @@ video {
   align-items: center;
 }
 
-.child\:gap-2 > * {
-  gap: 0.5rem;
-}
-
-.child\:gap-6 > * {
-  gap: 1.5rem;
-}
-
 .child\:gap-14 > * {
   gap: 3.5rem;
+}
+
+.child\:gap-2 > * {
+  gap: 0.5rem;
 }
 
 .child\:rounded-2xl > * {

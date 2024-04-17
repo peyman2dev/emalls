@@ -18,7 +18,7 @@ export default function Seller(props) {
   );
   console.log(props);
   return (
-    <article className="px-8 child:flex child:items-center child:gap-14 between min-h-[80px]">
+    <article className="px-8 odd:bg-gray-100/50  child:flex child:items-center child:gap-14 between rounded-lg min-h-[120px]">
       <section>
         <span className="text-zinc-900 relative">
           <Shop size={24} className="text-zinc-600" />
