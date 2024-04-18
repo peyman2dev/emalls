@@ -31,11 +31,9 @@ export default function Sellers() {
 
 
 
-  console.log(product.product.variants)
-
 
   return (
-    <section className="bg-white p-5  rounded-2xl shadow-lg shadow-black/5">
+    <section className="bg-white p-5 hidden invisible md:visible md:block  rounded-2xl shadow-lg shadow-black/5">
       <header>
         <div className="ic gap-2">
           <span>

@@ -3,6 +3,7 @@ import Articles from "../../Pages/Articles/Articles"
 import Home from "../../Pages/Home/Home"
 import Product from "../../Pages/Product/Product"
 import Search from "../../Pages/Search/Search"
+import Seller from "../../Pages/Seller/Seller"
 
 const routes = [
     {
@@ -24,6 +25,10 @@ const routes = [
     {
         path: "/search/:query",
         element: <Search />
+    },
+    {
+        path: "/seller/:sellerID",
+        element: <Seller />
     }
 ]
 

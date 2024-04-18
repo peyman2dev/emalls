@@ -5,15 +5,13 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   const [searchQuery, setSearchQuery] = useState("");
 
-
   const searchHandler = (e) => {
-    setSearchQuery(e.target.value)
-    const {keyCode} = e
+    setSearchQuery(e.target.value);
+    const { keyCode } = e;
     if (keyCode == 13 && searchQuery.length >= 2) {
-      location.pathname = `/search/${searchQuery}`
+      location.pathname = `/search/${searchQuery}`;
     }
   };
-
 
   return (
     <section className="lg:h-[450px] max-h-max    bg-[#0c0150] md:p-12 p-5 py-10 sm:p-10 relative">
@@ -67,27 +65,42 @@ export default function Hero() {
           {/* Quick Start Links */}
           <ul className="flex items-center gap-1 text-xs sm:text-sm  text-main font-medium mt-2">
             <li>
-              <Link className="sm:px-4 px-2 py-2 rounded-md bg-white">
+              <Link
+                to={`/search/پیکسل`}
+                className="sm:px-4 px-2 py-2 rounded-md bg-white"
+              >
                 پیکسل
               </Link>
             </li>
             <li>
-              <Link className="sm:px-4 px-2 py-2 rounded-md bg-white">
+              <Link
+                to={`/search/کوله پشتی`}
+                className="sm:px-4 px-2 py-2 rounded-md bg-white"
+              >
                 کوله پشتی
               </Link>
             </li>
             <li>
-              <Link className="sm:px-4 px-2 py-2 rounded-md  bg-white">
+              <Link
+                to={`/search/جا کلیدی و جاسوییچی`}
+                className="sm:px-4 px-2 py-2 rounded-md  bg-white"
+              >
                 جا کلیدی و جاسوییچی
               </Link>
             </li>
             <li>
-              <Link className="sm:px-4 px-2 py-2 rounded-md md:visible md:block hidden invisible bg-white">
+              <Link
+                to={`/search/عینک آفتابی`}
+                className="sm:px-4 px-2 py-2 rounded-md md:visible md:block hidden invisible bg-white"
+              >
                 عینک آفتابی
               </Link>
             </li>
             <li>
-              <Link className="sm:px-4 px-2 py-2 rounded-md md:visible md:block hidden invisible bg-white">
+              <Link
+                to={`/search/ساعت مچی آنالوگ`}
+                className="sm:px-4 px-2 py-2 rounded-md md:visible md:block hidden invisible bg-white"
+              >
                 ساعت مچی آنالوگ
               </Link>
             </li>

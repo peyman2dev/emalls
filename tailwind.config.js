@@ -3,26 +3,28 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: "568px",
+      xs: "0",
+      sm: "576px",
       md: "768px",
       lg: "992px",
-      xl: "1380px",
+      xl: "1280px",
+      xxl: "1580px",
     },
     extend: {
       container: {
-        center: true
+        center: true,
       },
       transitionProperty: {
-        'height': 'height'
+        height: "height",
       },
       fontFamily: {
-        "IranYekan": "IranYekan",
-        "price": "price",
+        IranYekan: "IranYekan",
+        price: "price",
       },
       colors: {
         main: "#2a2d53",
-        secondary: "#ff5f55"
-      }
+        secondary: "#ff5f55",
+      },
     },
   },
   plugins: [

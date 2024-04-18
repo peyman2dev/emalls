@@ -6,7 +6,7 @@ export default function Cover({ cover }) {
   // : ""
   return (
     <>
-      <div className="flex min-w-[25%] flex-col gap-5">
+      <div className="flex min-w-[30%] flex-center flex-col gap-5">
         <div className="max-w-[300px]">
           <img src={cover} className="max-w-[320px] " alt="" />
         </div>

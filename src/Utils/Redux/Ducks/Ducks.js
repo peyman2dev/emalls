@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import ajax from "../../API/Axios/Ajax/ajax";
+import axios from "axios";
 
 export const getMenusFromClient = createAsyncThunk(
   "apiClient/getMenusFromClient",
@@ -46,9 +47,20 @@ export const getPricesFromClient = createAsyncThunk(
 
 export const searchFromClient = createAsyncThunk(
   "apiClient/searchFromClient",
-  async ({query}) => {
-    return ajax.get('search/?q=' + query)
-    .then(response => response.data)
-    .then(resolve => resolve)
+  async ({ query }) => {
+    return ajax
+      .get("search/?q=" + query)
+      .then((response) => response.data)
+      .then((resolve) => resolve);
+  }
+);
+
+export const getSellerInfoFromClient = createAsyncThunk(
+  "apiClient/getSellerInfoFromClient",
+  async ({ sellerID }) => {
+    return axios
+      .get(`https://api.digikala.com/v1/sellers/${sellerID}/`)
+      .then((response) => response.data)
+      .then((resolve) => resolve);
   }
 );

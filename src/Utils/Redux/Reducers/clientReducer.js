@@ -4,6 +4,7 @@ import {
   getMenusFromClient,
   getPricesFromClient,
   getProductsFromApiClient,
+  getSellerInfoFromClient,
   searchFromClient,
 } from "../Ducks/Ducks";
 
@@ -18,6 +19,7 @@ const apiClient = createSlice({
     menus: [],
     prices: [],
     search: [],
+    seller: []
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -38,7 +40,10 @@ const apiClient = createSlice({
       })
       .addCase(searchFromClient.fulfilled, (state, action) => {
         state.search = action.payload.data;
-      });
+      })
+      .addCase(getSellerInfoFromClient.fulfilled, (state,action) => {
+        state.seller = action.payload.data
+      })
   },
 });
 

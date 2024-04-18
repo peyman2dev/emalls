@@ -22,7 +22,6 @@ export default function ProductSection(props) {
           <span>
             <ArrowLeft2 size={16}/>
           </span>
-
         </Link>
       </header>
       <section className='grid lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4'>

@@ -8,6 +8,7 @@ import Comments from "../Comments/Comments";
 import Details from "../Details/Details";
 import Sellers from "../Sellers/Sellers";
 import Sidebar from "../Sidebar/Sidebar";
+import Reviews from "../Reviews/Reviews";
 
 export default function Main() {
   const { product } = useContext(ProductContext);
@@ -33,8 +34,8 @@ export default function Main() {
   }, [product, breadRef]);
 
   return (
-    <main className="my-20  w-[94%] flex gap-5 md:w-full xl:flex-row flex-col  container">
-      <section className="space-y-5 ">
+    <main className="my-20  w-[94%]  flex gap-5 mx-auto flex-col xxl:flex-row ">
+      <section className="space-y-5 lg:w-[100%]">
         {/* Breadcrumb */}
         {product && product.product && breads ? (
           <>
@@ -51,18 +52,19 @@ export default function Main() {
                       key={index}
                       className="bg-white px-3 h-8  ic relative before:absolute before:content-[' ']  
                      before:w-0 before:h-0  before:right-full
-                     before:border-t-[16px] before:border-t-transparent
-                     before:border-r-[12px] before:border-r-white rounded-r-xl
-                     before:border-b-[16px] before:border-b-transparent
-                     text-sm font-medium tracking-tight min-w-max
-                     select-none"
+                    before:border-t-[16px] before:border-t-transparent
+                    before:border-r-[12px] before:border-r-white rounded-r-xl
+                    before:border-b-[16px] before:border-b-transparent
+                    text-sm font-medium tracking-tight min-w-max
+                    select-none
+              "
                     >
                       {bread.title}
                     </span>
                   ))}
                   <Link
                     to={`/product/${product.product.id}`}
-                    className="px-4 text-sm h-8 ic min-w-max rounded-lg bg-sky-600 text-white"
+                    className="px-4 text-sm h-8 ic min-w-max rounded-lg bg-blue-400 text-white"
                   >
                     {target.title}
                   </Link>
@@ -75,6 +77,7 @@ export default function Main() {
         )}
         <Content />
         <Details />
+        {product.product.expert_reviews.review_sections.length  ? <Reviews /> : false}
         <Sellers />
         <Comments />
       </section>
