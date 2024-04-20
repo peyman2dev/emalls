@@ -3,15 +3,13 @@ import React, { useEffect } from "react";
 import Video from "../../../Reusable/Video/Video";
 
 export default function Videos({ videos }) {
-  useEffect(() => {
-    console.log(videos);
-  }, []);
+
   return (
-    <section>
+    <section className="overflow-hidden">
       <header>
         <h6>ویدیو ها</h6>
       </header>
-      <main className="mt-5 flex items-center gap-3">
+      <main className="mt-5 overf flex items-center gap-3">
         {_.map(videos, (video, index) => (
           <Video video={video} key={index} />
         ))}

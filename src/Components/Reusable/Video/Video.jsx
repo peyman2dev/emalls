@@ -1,58 +1,85 @@
-import React, { useRef, useState } from "react";
-import { BiPlay } from "react-icons/bi";
+import React, { useEffect, useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
 import Controls from "./Controls/Controls";
+import usePlayer from "../../../Utils/Hooks/usePlayer";
 import VideoContext from "../../../Utils/Contexts/VideoContext";
-import Player from "./Funcs/Player";
 
 export default function Video({ video }) {
-  const [show, setShow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const [show, setShow] = useState(false);
   const videoRef = useRef();
+
+  const { Player, timeUpdator, currentTime, setCurrentTime } = usePlayer({
+    video: videoRef.current,
+    setIsPlaying,
+  });
+
+  useEffect(() => {
+    console.log(currentTime);
+  }, [currentTime]);
 
   return (
     <VideoContext.Provider
       value={{
+        Player,
         isPlaying,
         setIsPlaying,
-        source: videoRef.current,
-        Player
+        currentTime,
+        setCurrentTime,
       }}
     >
-      <article className="relative">
+      <article className="w-[280px] h-[380px] bg-black overflow-hidden rounded-xl">
+        {/* Cover */}
         <div
           onClick={() => setShow(!show)}
-          className="w-[270px] h-[380px] rounded-2xl overflow-hidden"
+          className="relative w-full select-none cursor-pointer flex-center h-full"
         >
-          <button className="w-full h-full relative flex-center">
-            <img
-              src={video.cover}
-              className="object-cover w-full h-full"
-              alt=""
-            />
-            <div className="absolute w-full h-full flex-center">
-              <span className="absolute w-12 text-white h-12 flex-center rounded-full bg-secondary/70">
-                <FaPlay variant="Bold" className="text-2xl text-white" />
-              </span>
-            </div>
-          </button>
+          <img src={video.cover} className="w-full" alt="" />
+          <span className="absolute z-10 text-white text-3xl w-12 h-12 flex-center pl-1 bg-secondary/70 backdrop-blur-sm rounded-full">
+            <FaPlay />
+          </span>
+          <div className="absolute w-full h-full bg-gradient-to-t from-black/40 backdrop-blur-[2px]"></div>
         </div>
+
         <section
-          onClick={() => setShow(!show)}
+          onClick={() => {
+            setShow(!show);
+            Player({ set: false });
+          }}
           className={`blurry-screen ${show ? "" : "opacity-0 invisible"}`}
         >
           <div
             onClick={(event) => event.stopPropagation()}
-            className={`flex-center lg:w-[80%] h-[80%] rounded-xl overflow-hidden relative bg-black ${
-              show ? "" : "scale-0"
-            } duration-300 `}
+            className="bg-black relative rounded-2xl overflow-hidden lg:w-[80%] text-white w-full h-full lg:h-[80%]"
           >
-            <video
-              ref={videoRef}
-              src={video.url}
-              className="h-full w-full"
-            ></video>
-            <Controls source={videoRef} />
+            <header className="absolute z-[2] left-5 top-3">
+              <button
+                onClick={() => {
+                  setShow(!show);
+                  Player();
+                }}
+              >
+                خروج
+              </button>
+            </header>
+            <main className="w-full h-full relative flex-center">
+              <video
+                onTimeUpdate={(event) => timeUpdator(event.target.currentTime)}
+                ref={videoRef}
+                onClick={() => Player()}
+                src={video.url}
+                className="w-full h-full cursor-pointer"
+              ></video>
+              {!isPlaying && (
+                <button className="absolute">
+                  <span className=" z-10 text-white text-2xl w-12 h-12 flex-center  bg-black/40 backdrop-blur-sm rounded-full">
+                    <FaPlay />
+                  </span>
+                </button>
+              )}
+            </main>
+            <Controls />
           </div>
         </section>
       </article>

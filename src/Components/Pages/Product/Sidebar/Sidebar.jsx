@@ -98,7 +98,7 @@ export default function Sidebar() {
             {_.map(
               product.product.default_variant.shipment_methods.providers,
               (ship, index) => (
-                <div className="ic gap-1 my-3">
+                <div key={index} className="ic gap-1 my-3">
                   <span>
                     <CiDeliveryTruck className="text-xl" />
                   </span>

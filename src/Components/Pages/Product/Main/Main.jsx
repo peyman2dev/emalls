@@ -36,7 +36,7 @@ export default function Main() {
 
   return (
     <main className="my-20  w-[94%]  child:rounded-md flex gap-5 mx-auto flex-col xxl:flex-row ">
-      <section className="space-y-5 lg:w-[100%]">
+      <section className="space-y-5 xl:w-[100%] xxl:w-[75%]">
         {/* Breadcrumb */}
         {product && product.product && breads ? (
           <>
