@@ -38,6 +38,10 @@ body {
   @apply select-none px-3 font-price text-sm bg-red-500 text-white pt-0.5 rounded-xl;
 }
 
+.blurry-screen {
+  @apply w-full h-screen flex items-center justify-center backdrop-blur-sm bg-black/20 z-50 fixed top-0 right-0 duration-300
+}
+
 .product-card main  {
   @apply p-3 
 }

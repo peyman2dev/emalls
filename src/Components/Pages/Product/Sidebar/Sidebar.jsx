@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import ProductContext from "../../../../Utils/Contexts/ProductContext";
 import { Link } from "react-router-dom";
 import { ShieldTick, Shop } from "iconsax-react";
@@ -13,12 +13,8 @@ export default function Sidebar() {
   const [menuShow, setMenuShow] = useState(false);
   const { seller } = product.product.default_variant;
 
-  useEffect(() => {
-    console.log(product);
-  }, []);
-
   return (
-    <aside className="xxl:min-w-[340px]  max-w-[340px] hidden invisible xxl:visible xxl:block sticky top-20 h-[400px] child:shadow-lg child:shadow-black/5 mt-12 child:bg-gray-50 child:rounded-md border space-y-5">
+    <aside className="xxl:min-w-[340px]  max-w-[340px] hidden invisible xxl:visible xxl:block sticky top-20 h-[400px] child:shadow-lg child:shadow-black/5 mt-12 child:bg-white child:rounded-md border space-y-5">
       <section className="p-5 relative group">
         <header className="between text-sm text-zinc-400">
           <p className="font-bold text-zinc-900 text-lg">فروشنده</p>
@@ -99,18 +95,19 @@ export default function Sidebar() {
             </div>
           </div>
           <div className="my-3">
-            {
-              _.map(product.product.default_variant.shipment_methods.providers, (ship, index) => (
+            {_.map(
+              product.product.default_variant.shipment_methods.providers,
+              (ship, index) => (
                 <div className="ic gap-1 my-3">
                   <span>
-                  <CiDeliveryTruck className="text-xl" />
+                    <CiDeliveryTruck className="text-xl" />
                   </span>
                   <span className="font-price text-sm pt-0.5">
                     {ship.title}
                   </span>
                 </div>
-              ))
-            }
+              )
+            )}
           </div>
         </footer>
 

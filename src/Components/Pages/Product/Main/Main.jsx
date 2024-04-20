@@ -9,6 +9,7 @@ import Details from "../Details/Details";
 import Sellers from "../Sellers/Sellers";
 import Sidebar from "../Sidebar/Sidebar";
 import Reviews from "../Reviews/Reviews";
+import Videos from "../Videos/Videos";
 
 export default function Main() {
   const { product } = useContext(ProductContext);
@@ -19,7 +20,7 @@ export default function Main() {
 
   useEffect(() => {
     if (product && product.product) {
-      let basicBreads = _.find(product.product.breadcrumb, (bread) => {
+      _.find(product.product.breadcrumb, (bread) => {
         if (String(bread.url.uri).includes("/product/")) {
           setTarget(bread);
         } else {
@@ -34,7 +35,7 @@ export default function Main() {
   }, [product, breadRef]);
 
   return (
-    <main className="my-20  w-[94%]  flex gap-5 mx-auto flex-col xxl:flex-row ">
+    <main className="my-20  w-[94%]  child:rounded-md flex gap-5 mx-auto flex-col xxl:flex-row ">
       <section className="space-y-5 lg:w-[100%]">
         {/* Breadcrumb */}
         {product && product.product && breads ? (
@@ -77,8 +78,13 @@ export default function Main() {
         )}
         <Content />
         <Details />
-        {product.product.expert_reviews.review_sections.length  ? <Reviews /> : false}
+        {product.product.expert_reviews.review_sections.length ? (
+          <Reviews />
+        ) : (
+          false
+        )}
         <Sellers />
+       {product.product.videos && <Videos videos={product.product.videos} />}
         <Comments />
       </section>
       <Sidebar />
