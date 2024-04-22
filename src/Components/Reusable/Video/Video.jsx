@@ -5,28 +5,18 @@ import usePlayer from "../../../Utils/Hooks/usePlayer";
 import VideoContext from "../../../Utils/Contexts/VideoContext";
 
 export default function Video({ video }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [focused, setFocused] = useState(false);
   const [show, setShow] = useState(false);
   const videoRef = useRef();
 
-  const { Player, timeUpdator, currentTime, setCurrentTime } = usePlayer({
-    video: videoRef.current,
-    setIsPlaying,
-  });
-
+  const Video = usePlayer({ video: videoRef.current });
   useEffect(() => {
-    console.log(currentTime);
-  }, [currentTime]);
+
+  }, [Video.currentTime]);
 
   return (
     <VideoContext.Provider
       value={{
-        Player,
-        isPlaying,
-        setIsPlaying,
-        currentTime,
-        setCurrentTime,
+        Video,
       }}
     >
       <article className="w-[280px] h-[380px] bg-black overflow-hidden rounded-xl">
@@ -45,7 +35,7 @@ export default function Video({ video }) {
         <section
           onClick={() => {
             setShow(!show);
-            Player({ set: false });
+            Video.Player({ set: false });
           }}
           className={`blurry-screen ${show ? "" : "opacity-0 invisible"}`}
         >
@@ -57,7 +47,7 @@ export default function Video({ video }) {
               <button
                 onClick={() => {
                   setShow(!show);
-                  Player();
+                  Video.Player();
                 }}
               >
                 خروج
@@ -65,13 +55,15 @@ export default function Video({ video }) {
             </header>
             <main className="w-full h-full relative flex-center">
               <video
-                onTimeUpdate={(event) => timeUpdator(event.target.currentTime)}
+                onTimeUpdate={(event) =>
+                  Video.timeUpdator(event.target.currentTime)
+                }
                 ref={videoRef}
-                onClick={() => Player()}
+                onClick={() => Video.Player()}
                 src={video.url}
                 className="w-full h-full cursor-pointer"
               ></video>
-              {!isPlaying && (
+              {!Video.isPlaying && (
                 <button className="absolute">
                   <span className=" z-10 text-white text-2xl w-12 h-12 flex-center  bg-black/40 backdrop-blur-sm rounded-full">
                     <FaPlay />

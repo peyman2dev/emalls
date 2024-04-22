@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import getProduct from "../../Utils/API/Requests/getProduct";
 import ProductContext from "../../Utils/Contexts/ProductContext";
@@ -9,26 +9,29 @@ import Loading from "../../Components/Reusable/Loading/Loading";
 export default function Product() {
   const { productName } = useParams();
   const [product, setProduct] = useState({});
-  const [selectedColor, setSelectedColor] = useState(1);
-  const setMainColor = (color) => {};
-  useEffect(() => {
-    getProduct(productName).then((res) => {
-      setProduct(res.data);
+  const [isLoading, setIsLoading] = useState(true);
 
-    });
-  }, [productName, product]);
+  useEffect(() => {
+    getProduct(productName)
+      .then((res) => {
+        setProduct(res.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching product:", error);
+        setIsLoading(false);
+      });
+  }, [productName]);
 
   return (
     <>
       <ProductContext.Provider
         value={{
           product,
-          color: selectedColor,
-          setColor: setSelectedColor,
         }}
       >
         <Header />
-        {product && product.product ? <Main /> : <Loading />}
+        {isLoading ? <Loading /> : <Main />}
       </ProductContext.Provider>
     </>
   );
