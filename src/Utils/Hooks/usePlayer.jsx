@@ -28,7 +28,6 @@ export default function usePlayer({ video }) {
   };
 
   const volumeHandler = (e) => {
-    console.log(e);
   };
 
   const timeUpdator = (time) => {

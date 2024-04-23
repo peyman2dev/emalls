@@ -5,22 +5,16 @@ import ProductContext from "../../Utils/Contexts/ProductContext";
 import Header from "../../Components/Reusable/Header/Header";
 import Main from "../../Components/Pages/Product/Main/Main";
 import Loading from "../../Components/Reusable/Loading/Loading";
+import { useDispatch, useSelector } from "react-redux";
+import { getProductInfoFromClient } from "../../Utils/Redux/Ducks/Ducks";
 
 export default function Product() {
+  const dispatch = useDispatch();
+  const { product, isLoading } = useSelector((state) => state.client);
   const { productName } = useParams();
-  const [product, setProduct] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getProduct(productName)
-      .then((res) => {
-        setProduct(res.data);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching product:", error);
-        setIsLoading(false);
-      });
+    dispatch(getProductInfoFromClient({ productID: productName }));
   }, [productName]);
 
   return (

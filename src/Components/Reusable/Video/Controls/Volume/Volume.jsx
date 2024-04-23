@@ -6,6 +6,7 @@ export default function Volume() {
   const { Video } = useContext(VideoContext);
   useEffect(() => {
     if (Video) {
+      console.log(Video);
     }
   }, [Video]);
 

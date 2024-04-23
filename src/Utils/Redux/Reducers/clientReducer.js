@@ -3,10 +3,19 @@ import {
   getArticlesFromClient,
   getMenusFromClient,
   getPricesFromClient,
+  getProductInfoFromClient,
   getProductsFromApiClient,
   getSellerInfoFromClient,
   searchFromClient,
 } from "../Ducks/Ducks";
+import Swal from "sweetalert2";
+
+const Toast = Swal.mixin({
+  toast: true,
+  timer: 3000,
+  position: "top-start",
+  timerProgressBar: true,
+});
 
 const apiClient = createSlice({
   name: "apiClient",
@@ -19,7 +28,8 @@ const apiClient = createSlice({
     menus: [],
     prices: [],
     search: [],
-    seller: []
+    seller: [],
+    isLoading: true,
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -41,9 +51,19 @@ const apiClient = createSlice({
       .addCase(searchFromClient.fulfilled, (state, action) => {
         state.search = action.payload.data;
       })
-      .addCase(getSellerInfoFromClient.fulfilled, (state,action) => {
-        state.seller = action.payload.data
+      .addCase(getSellerInfoFromClient.fulfilled, (state, action) => {
+        state.seller = action.payload.data;
       })
+      .addCase(getProductInfoFromClient.fulfilled, (state, action) => {
+        state.product = action.payload.data;
+        state.isLoading = false
+      })
+      .addCase(getProductInfoFromClient.rejected, (state, action) => {
+        Toast.fire({
+          title: "خطایی رخ داده ست ...",
+          icon: "error",
+        });
+      });
   },
 });
 

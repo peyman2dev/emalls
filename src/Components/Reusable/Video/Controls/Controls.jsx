@@ -13,6 +13,7 @@ export default function Controls() {
         ...prev,
         precent: Math.floor((Video.currentTime / Video.duration) * 100),
       }));
+      console.log(Video)
     }
   }, [Video.currentTime]);
 
@@ -24,12 +25,7 @@ export default function Controls() {
       </div>
       <div className="w-[90%]">
         <div className="w-full h-1 cursor-pointer bg-white/40 rounded-lg  relative">
-          <div
-            className="absolute p-2 rounded-t-2xl bg-black/50 px-6 text-white bottom-[110%]"
-            style={{ left: 1 + "%" }}
-          >
-            2
-          </div>
+        
           <div
             className="h-full absolute left-0  bg-white transition-all  ic cursor-pointer"
             style={{ width: Video.progress.precent + "%" }}

@@ -64,3 +64,13 @@ export const getSellerInfoFromClient = createAsyncThunk(
       .then((resolve) => resolve);
   }
 );
+
+export const getProductInfoFromClient = createAsyncThunk(
+  "apiClient/getProductInfoFromClient",
+  async ({ productID }) => {
+    return axios
+      .get(`https://api.digikala.com/v2/product/${productID}/`)
+      .then((req) => req.data)
+      .then((result) => result);
+  }
+);
