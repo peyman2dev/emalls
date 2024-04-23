@@ -31,7 +31,7 @@ export default function Controls() {
             2
           </div>
           <div
-            className="h-full absolute left-0  bg-white transition-all duration-500 ic cursor-pointer"
+            className="h-full absolute left-0  bg-white transition-all  ic cursor-pointer"
             style={{ width: Video.progress.precent + "%" }}
           >
             <div className="w-2.5 h-2.5 rounded-full bg-white absolute right-0"></div>

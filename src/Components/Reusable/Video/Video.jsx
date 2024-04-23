@@ -5,13 +5,10 @@ import usePlayer from "../../../Utils/Hooks/usePlayer";
 import VideoContext from "../../../Utils/Contexts/VideoContext";
 
 export default function Video({ video }) {
-  const [show, setShow] = useState(false);
   const videoRef = useRef();
 
   const Video = usePlayer({ video: videoRef.current });
-  useEffect(() => {
-
-  }, [Video.currentTime]);
+  useEffect(() => {}, [Video.currentTime]);
 
   return (
     <VideoContext.Provider
@@ -22,7 +19,7 @@ export default function Video({ video }) {
       <article className="w-[280px] h-[380px] bg-black overflow-hidden rounded-xl">
         {/* Cover */}
         <div
-          onClick={() => setShow(!show)}
+          onClick={() => Video.setShow(!Video.show)}
           className="relative w-full select-none cursor-pointer flex-center h-full"
         >
           <img src={video.cover} className="w-full" alt="" />
@@ -34,10 +31,11 @@ export default function Video({ video }) {
 
         <section
           onClick={() => {
-            setShow(!show);
+            Video.setShow(!Video.show);
             Video.Player({ set: false });
           }}
-          className={`blurry-screen ${show ? "" : "opacity-0 invisible"}`}
+          onKeyDown={() => Video.spaceBtnHandler()}
+          className={`blurry-screen ${Video.show ? "" : "opacity-0 invisible"}`}
         >
           <div
             onClick={(event) => event.stopPropagation()}
@@ -46,8 +44,8 @@ export default function Video({ video }) {
             <header className="absolute z-[2] left-5 top-3">
               <button
                 onClick={() => {
-                  setShow(!show);
-                  Video.Player();
+                  Video.setShow(!Video.show);
+                  Video.Player({ set: false });
                 }}
               >
                 خروج

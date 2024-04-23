@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export default function usePlayer({ video }) {
   const [currentTime, setCurrentTime] = useState(0);
+  const [show, setShow] = useState(false);
   const [progress, setProgress] = useState({
     hours: 0,
     minutes: 0,
@@ -20,18 +21,34 @@ export default function usePlayer({ video }) {
       setIsPlaying(false);
       video.pause();
     }
-    if (options && options.set == false) {
+    if (options) {
       setIsPlaying(false);
       video.pause();
     }
   };
 
   const volumeHandler = (e) => {
-    console.log(e)
+    console.log(e);
   };
 
   const timeUpdator = (time) => {
     setCurrentTime(Math.floor(time));
+  };
+  const spaceBtnHandler = () => {
+    if (show && !isPlaying) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      setIsPlaying(false);
+      video.pause();
+    }
+  };
+  window.onkeydown = (event) => {
+    const { keyCode } = event;
+    if (keyCode == 32) {
+      console.log(keyCode);
+      spaceBtnHandler();
+    }
   };
 
   useEffect(() => {
@@ -56,10 +73,13 @@ export default function usePlayer({ video }) {
     updateCurrentTime,
     setIsPlaying,
     isPlaying,
+    spaceBtnHandler,
     progress,
     focusPos,
     volumeHandler,
     setFocusPos,
     setProgress,
+    show,
+    setShow,
   };
 }
